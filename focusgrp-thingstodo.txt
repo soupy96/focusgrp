@@ -1,0 +1,14 @@
+FOCUSGRP — THINGS TO DO
+
+RESPONSIVE
+- responsive
+
+OTHER
+- mobile nav which covers full screen
+- all browsers work
+	- slider doesnt work in other browsers
+	- pdf opener is massive in IE
+
+NOT NECESSARY BUT NICE TO HAVE
+- timeline for insight cards
+- smooth scroll on nav links
