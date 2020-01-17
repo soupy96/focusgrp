@@ -6,8 +6,9 @@ RESPONSIVE
 OTHER
 - mobile nav which covers full screen
 - all browsers work
-	- slider doesnt work in other browsers
+	- slider doesnt work in IE
 	- pdf opener is massive in IE
+	- when user opens site in IE display a message that says not to use IE but use another updated browser
 
 NOT NECESSARY BUT NICE TO HAVE
 - timeline for insight cards
