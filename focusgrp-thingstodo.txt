@@ -6,10 +6,10 @@ RESPONSIVE
 OTHER
 - mobile nav which covers full screen
 - all browsers work
-	- slider doesnt work in IE
+	- adjust positioning of the pdf opener in chrome, moz, edge
 	- pdf opener is massive in IE
-	- when user opens site in IE display a message that says not to use IE but use another updated browser
 
 NOT NECESSARY BUT NICE TO HAVE
 - timeline for insight cards
+	- use the hidden radio buttons on line 460 style.css
 - smooth scroll on nav links

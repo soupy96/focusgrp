@@ -466,7 +466,6 @@ a {
     perspective: 1000px;
     transform-style: preserve-3d;
     color: black;
-    -ms-transform-style: none;
 }
 
 #slider label {
@@ -478,7 +477,6 @@ a {
     left: 0; right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
-    -ms-transition: none;
 }
 
 /* THESE ARE IN ORDER OF THE TRANSFORM 3D X PROPERTY */
@@ -577,11 +575,13 @@ a {
 #slide1 { 
     background-image: url(../insights/insights-2020.jpg);
     background-size: 105%;
+    z-index: 1;
 }
 
 #slide2 { 
     background-image: url(../insights/jan-insight.jpg);
     background-size: 105%;
+    z-index: -1;
 }
 
 #slide3 { 
