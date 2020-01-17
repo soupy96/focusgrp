@@ -451,6 +451,7 @@ a {
 
 .insightsscroll {
     margin-left: 25%;
+    width: 45%;
 }
 /* End of Insights Styles */
 
@@ -465,20 +466,23 @@ a {
     perspective: 1000px;
     transform-style: preserve-3d;
     color: black;
+    -ms-transform-style: none;
 }
 
 #slider label {
     margin: auto;
-    width: 60%;
+    width: 100%;
     height: 100%;
     border-radius: 4px;
     position: absolute;
     left: 0; right: 0;
     cursor: pointer;
     transition: transform 0.4s ease;
+    -ms-transition: none;
 }
 
-/* THESE ARE IN ORDER OF THE TRANSFORM 3D % PROPERTY */
+/* THESE ARE IN ORDER OF THE TRANSFORM 3D X PROPERTY */
+/* TRANSFORM 3D COORDINATES GO IN X,Y,Z */
 /* Skips 12*/
 #s1:checked ~ #slide13, #s2:checked ~ #slide1, #s3:checked ~ #slide2, 
 #s4:checked ~ #slide3, #s5:checked ~ #slide4, #s6:checked ~ #slide5, #s7:checked ~ #slide6, #s8:checked ~ #slide7, #s9:checked ~ #slide8, 
