@@ -5,9 +5,6 @@ RESPONSIVE
 
 OTHER
 - mobile nav which covers full screen
-- all browsers work
-	- adjust positioning of the pdf opener in chrome, moz, edge
-	- pdf opener is massive in IE
 
 NOT NECESSARY BUT NICE TO HAVE
 - timeline for insight cards
