@@ -688,6 +688,15 @@ input {
     font-size: 1.25em;
 }
 
+input::-ms-input-placeholder, textarea::-ms-input-placeholder {
+    color: #ffffff;
+}
+
+input::-moz-placeholder, textarea::-moz-placeholder {
+    color: #ffffff;
+    opacity: 1;
+}
+
 .with-errors {
     width: 100%;
     float: left;
