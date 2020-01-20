@@ -170,7 +170,7 @@ a {
 .topnav {
     overflow: hidden;
     float: left;
-    margin-top: 2.5%;
+    margin-top: 3.25%;
     margin-bottom: 2.5%;
     margin-left: 5%;
 }
@@ -221,26 +221,8 @@ a {
     display: none;
 }
 
-@media screen and (max-width: 1000px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-        float: right;
-        display: block;
-    }
-}
-
-@media screen and (max-width: 1000px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-        position: absolute;
-        right: 0;
-        top: 0;
-    }
-    .topnav.responsive a {
-        float: none;
-        display: block;
-        text-align: left;
-    }
+.mobilenav {
+    display: none;
 }
 /* End of Navigation Styles */
 
@@ -441,6 +423,7 @@ a {
     width: 40%;
     float: left;
     height: 100%;
+    margin-left: -3vw;
 }
 
 .rightinsights {
@@ -811,3 +794,322 @@ textarea {
     color: #A9A9A9;
 }
 /* End of Footer Styles */
+
+/* Media Queries */
+
+@media only screen and (max-width: 1800px) {
+    .leftlanding {
+        margin-left: -3.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -3.5vw;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .leftlanding {
+        margin-left: -3.75vw;
+    }
+
+    .leftinsights {
+        margin-left: -3.75vw;
+    }
+}
+
+@media only screen and (max-width: 1600px) {
+    .logo {
+        width: 12%;
+    }
+    
+    .leftlanding {
+        margin-left: -4vw;
+    }
+
+    .leftinsights {
+        margin-left: -4vw;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .leftlanding {
+        margin-left: -4.25vw;
+    }
+
+    .leftinsights {
+        margin-left: -4.25vw;
+    }
+
+    .topnav {
+        margin-top: 3%;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .leftlanding {
+        margin-left: -4.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -4.5vw;
+    }
+}
+
+@media only screen and (max-width: 1400px) {
+    .logo {
+        width: 14%;
+    }
+
+    .headerhotline {
+        margin-top: 3%;
+    }
+
+    .headersocials {
+        margin-top: 3%;
+    }
+    
+    .leftlanding {
+        margin-left: -5vw;
+    }
+
+    .leftinsights {
+        margin-left: -5vw;
+    }
+
+    .topnav {
+        margin-top: 3.25%;
+    }
+}
+
+@media only screen and (max-width: 1300px) {
+    .topnav {
+        margin-top: 3.5%;
+    }
+    
+    .headerhotline {
+        margin-top: 3.5%;
+    }
+
+    .headersocials {
+        margin-top: 3.5%;
+    }
+    
+    .leftlanding {
+        margin-left: -5vw;
+    }
+
+    .leftinsights {
+        margin-left: -5vw;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .logo {
+        width: 16%;
+    }
+    
+    .leftlanding {
+        margin-left: -5.25vw;
+    }
+
+    .leftinsights {
+        margin-left: -5.25vw;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .topnav {
+        margin-top: 4%;
+    }
+    
+    .logo {
+        width: 18%;
+    }
+
+    .headerhotline {
+        margin-top: 4%;
+    }
+
+    .headersocials {
+        margin-top: 4%;
+    }
+    
+    .leftlanding {
+        margin-left: -5.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -5.5vw;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .topnav {
+        display: none;
+    }
+
+    .mobilenav {
+        display: block;
+        right: 0;
+        position: fixed;
+        z-index: 998;
+    }
+
+    /* Styles for the mobile nav */
+    @keyframes checked-anim {
+        /* 50% {
+            width: 3000px;
+            height: 3000px;
+        } */
+
+        0% {
+            width: 10%;
+            height: 10%;
+            border-radius: 1;
+        }
+
+        100% {
+            width: 15%;
+            height: 35%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        /* 0% {
+            width: 3000px;
+            height: 3000px;
+        } */
+
+        0% {
+            width: 15%;
+            height: 35%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 10%;
+            height: 10%;
+            border-radius: 1;
+        }
+    }
+
+    #trigger, #burger, #burger:before, #burger:after {
+        position: absolute;
+        top: 25px;
+        right: 25px;
+        background: #ffffff;
+        width: 30px;
+        height: 5px;
+        transition: .2s ease;
+        cursor: pointer;
+        z-index: 1000;
+    }
+
+    #trigger {
+        height: 25px;
+        background: none;
+    }
+
+    #burger:before {
+        content: " ";
+        top: 10px;
+        right: 0;
+    }
+
+    #burger:after {
+        content: " ";
+        top: 20px;
+        right: 0;
+    }
+
+    #menu-toggle:checked + #trigger + #burger {
+        top: 35px;
+        transform: rotate(180deg);
+        transition: transform .2s ease;
+    }
+    
+    #menu-toggle:checked + #trigger + #burger:before {
+        width: 20px;
+        top: 9px;
+        right: 11px;
+        transform: rotate(45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+
+    #menu-toggle:checked + #trigger + #burger:after {
+        width: 20px;
+        top: -9px;
+        right: 11px;
+        transform: rotate(-45deg) translateX(-5px);
+        transition: transform .2s ease;
+    }
+
+    #menu {
+        position: fixed;
+        right: 0;
+        margin: 0; padding: 0;
+        width: 110px;
+        height: 110px;
+        background-color: #2A5769;
+        border-bottom-left-radius: 100%;
+        box-shadow: 0 2px 5px rgba(0,0,0,0.26);
+        animation: not-checked-anim .2s both;
+        transition: .2s;
+        z-index: 999;
+    }
+
+    #menu-toggle:checked + #trigger + #burger + #menu {
+        animation: checked-anim 1s ease both;
+    }
+
+    #menu-toggle:checked + #trigger ~ #menu > .box li, .box li a {
+        display: block !important;
+    }
+
+    [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
+        display: none;
+    }
+
+    .box {
+        right: 25px;
+        position: absolute;
+        height: auto;
+        width: 100%;
+        text-align: right;
+        /* border: 1px solid orange; */
+    }
+
+    .box li, .box li a {
+        margin: 75px 0 -55px 0;
+        color: #ffffff;
+        font: 14pt "Roboto", sans-serif;
+        font-weight: 700;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: none;
+        list-style: none;
+        outline: 0;
+        display: none;
+        z-index: 1002;
+        position: relative;
+    }
+    /* End of the styles for the mobile nav */
+
+    .logo {
+        width: 20%;
+        margin-right: 7%;
+    }
+
+    .headerhotline {
+        float: left;
+        margin-top: 4%;
+    }
+
+    .headersocials {
+        float: left;
+        margin-right: 0;
+        margin-top: 3.5%;
+        margin-left: 7%;
+    }
+}

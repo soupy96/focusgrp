@@ -5,6 +5,7 @@ RESPONSIVE
 
 OTHER
 - mobile nav which covers full screen
+- talk about a favicon logo design and change the one thats in place
 
 NOT NECESSARY BUT NICE TO HAVE
 - timeline for insight cards
