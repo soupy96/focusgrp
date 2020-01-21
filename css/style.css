@@ -125,7 +125,8 @@ a {
     display:none;
     -webkit-border-radius:60px;
     -moz-border-radius:60px;
-    border-radius:60px
+    border-radius:60px;
+    z-index: 999999;
 }
 
 #scroll span {
@@ -749,6 +750,11 @@ textarea {
     text-align: center;
 }
 
+.footercenter {
+    width: 100%;
+    height: 100%;
+}
+
 .footerlogo {
     margin-bottom: 5%;
 }
@@ -1236,12 +1242,37 @@ textarea {
     /* End of changing the layout of the contact section */
 
     /* Changing the layout of the footer section */
-    .footerlogo img {
-        width: 50%;
+    .footer {
+        width: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
     }
 
-    .footerhotline a {
+    .footerlogo {
         width: 100%;
+        height: 100%;
+    }
+
+    .footerlogo img {
+        width: 15%;
+    }
+
+    .footerSCH {
+        width: 100%;
+        height: 100%;
+    }
+
+    .footersocials {
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .footerhotline {
+        width: 100%;
+    }
+    
+    .footerhotline a {
+        width: 15%;
     }
     /* End of changing the layout of the footer section */
 }
@@ -1257,19 +1288,8 @@ textarea {
 }
 
 @media only screen and (max-width: 830px) {
-    .footersocials {
-        width: 100%;
-        margin-top: 5%;
-    }
-
-    .footerhotline {
-        width: 100%;
-        margin-top: 10%;
-        margin-bottom: 10%;
-    }
-
     .footerhotline a {
-        width: 60%;
+        width: 20%;
     }
 }
 
@@ -1377,6 +1397,10 @@ textarea {
         margin-left: 5%;
         margin-right: 5%;
     }
+
+    .footerlogo img {
+        width: 20%;
+    }
 }
 
 @media only screen and (max-width: 700px) {
@@ -1431,14 +1455,6 @@ textarea {
     .form-group {
         width: 100%;
         margin-bottom: 15%;
-    }
-
-    .footerlogo img {
-        width: 55%;
-    }
-
-    .footerhotline a {
-        width: 70%;
     }
 }
 
@@ -1528,11 +1544,51 @@ textarea {
     }
 
     .footerlogo img {
-        width: 65%;
+        width: 25%;
+    }
+
+    .footerhotline a {
+        width: 25%;
     }
 }
 
 @media only screen and (max-width: 500px) {
+    @keyframes checked-anim {
+        0% {
+            width: 18%;
+            height: 11%;
+            border-radius: 1;
+        }
+
+        100% {
+            width: 30%;
+            height: 35%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        0% {
+            width: 30%;
+            height: 35%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 18%;
+            height: 11%;
+            border-radius: 1;
+        }
+    }
+
+    .leftlanding {
+        margin-left: -12.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -12.5vw;
+    }
+    
     .rightinsightsmobile img {
         width: 90%;
         float: left;
@@ -1541,9 +1597,101 @@ textarea {
 }
 
 @media only screen and (max-width: 400px) {
+    @keyframes checked-anim {
+        0% {
+            width: 22%;
+            height: 10%;
+            border-radius: 1;
+        }
 
+        100% {
+            width: 35%;
+            height: 35%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        0% {
+            width: 35%;
+            height: 35%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 22%;
+            height: 10%;
+            border-radius: 1;
+        }
+    }
+
+    .leftlanding {
+        margin-left: -15.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -15.5vw;
+    }
+
+    .footerlogo img {
+        width: 30%;
+    }
+
+    .footerhotline a {
+        width: 35%;
+    }
 }
 
 @media only screen and (max-width: 300px) {
+    @keyframes checked-anim {
+        0% {
+            width: 22%;
+            height: 10%;
+            border-radius: 1;
+        }
 
+        100% {
+            width: 40%;
+            height: 35%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        0% {
+            width: 35%;
+            height: 35%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 30%;
+            height: 10%;
+            border-radius: 1;
+        }
+    }
+
+    .logo img {
+        width: 45%;
+    }
+
+    .leftlanding {
+        margin-left: -21.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -21.5vw;
+    }
+
+    .contactreq {
+        margin-bottom: 15%;
+    }
+
+    .footerlogo img {
+        width: 40%;
+    }
+
+    .footerhotline a {
+        width: 45%;
+    }
 }
