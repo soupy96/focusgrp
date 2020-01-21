@@ -385,6 +385,10 @@ a {
     height: 100%;
 }
 
+.leftbody h2 {
+    display: none;
+}
+
 .centerservices {
     width: 30%;
     float: left;
@@ -1102,5 +1106,69 @@ textarea {
         margin-left: 7%;
     }
 
-    
+    /* Changing the layout for the services section */
+    .leftservices {
+        width: 100%;
+        margin-bottom: 10%;
+    }
+
+    .imgboxleft {
+        width: 30%;
+        float: left;
+    }
+
+    .imgboxleft h2 {
+        display: none;
+    }
+
+    .imgboxleft .servicesimg {
+        width: 160px;
+    }
+
+    .redbox {
+        display: none;
+    }
+
+    .leftbody {
+        width: 65%;
+        float: left;
+        margin-left: 5%;
+    }
+
+    .leftbody h2 {
+        display: inline;
+        border-bottom: 2px solid #FA9600;
+    }
+
+    .centerservices {
+        width: 100%;
+        margin: 0px;
+        margin-bottom: 10%;
+    }
+
+    .imgboxright {
+        width: 30%;
+        float: right;
+    }
+
+    .imgboxright h2 {
+        display: none;
+    }
+
+    .rightbody {
+        width: 65%;
+        float: right;
+        margin-right: 5%;
+    }
+
+    .rightbody h2 {
+        display: inline;
+        border-bottom: 2px solid #FA9600;
+    }
+
+    .rightservices {
+        width: 100%;
+        float: left;
+    }
+    /* End of changing the layout for the services section */
 }
