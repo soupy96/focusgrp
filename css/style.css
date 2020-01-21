@@ -959,6 +959,7 @@ textarea {
     }
 }
 
+/* Changing the layout to mobile/tablet friendly */
 @media only screen and (max-width: 1000px) {
     .topnav {
         display: none;
@@ -1059,6 +1060,7 @@ textarea {
         height: 110px;
         background-color: #2A5769;
         border-bottom-left-radius: 100%;
+        -ms-border-bottom-left-radius: 100%;
         box-shadow: 0 2px 5px rgba(0,0,0,0.26);
         animation: not-checked-anim .2s both;
         transition: .2s;
@@ -1187,7 +1189,6 @@ textarea {
     /* Changing the layout of the insights section */
     .leftinsights {
         width: 70%;
-        float: left;
     }
 
     .leftinsights .redbox{
@@ -1198,6 +1199,10 @@ textarea {
         width: 100%;
         float: left;
         margin-top: 5%;
+    }
+
+    .insightsscroll {
+        margin-left: 32%;
     }
 
     #slider {
@@ -1224,4 +1229,236 @@ textarea {
         margin-right: 10%;
     }
     /* End of changing the layout of the contact section */
+
+    /* Changing the layout of the footer section */
+    .footerlogo img {
+        width: 50%;
+    }
+
+    .footerhotline a {
+        width: 100%;
+    }
+    /* End of changing the layout of the footer section */
+}
+
+@media only screen and (max-width: 830px) {
+    .footersocials {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .footerhotline {
+        width: 100%;
+        margin-top: 10%;
+        margin-bottom: 10%;
+    }
+
+    .footerhotline a {
+        width: 60%;
+    }
+}
+
+/* Changing the layout to fit for just mobile/smaller screens */
+@media only screen and (max-width: 800px) {
+    @keyframes checked-anim {
+        0% {
+            width: 12%;
+            height: 12%;
+            border-radius: 1;
+        }
+
+        100% {
+            width: 20%;
+            height: 35%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        0% {
+            width: 20%;
+            height: 35%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 12%;
+            height: 12%;
+            border-radius: 1;
+        }
+    }
+    
+    .logo {
+        width: 100%;
+        float: left;
+    }
+
+    .logo img {
+        width: 20%;
+    }
+
+    .headerhotline {
+        width: 100%;
+        margin-top: 5%;
+    }
+
+    .headersocials {
+        width: 100%;
+        margin-top: 5%;
+        margin-left: 0%;
+    }
+
+    .rightinsights {
+        display: none;
+    }
+    
+    .rightinsightsmobile {
+        display: block;
+        width: 100%;
+        float: left;
+        margin-top: 5%;
+    }
+
+    .rightinsightsmobile img{
+        width: 40%;
+        float: left;
+        margin: 5%;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    @keyframes checked-anim {
+        0% {
+            width: 14%;
+            height: 12%;
+            border-radius: 1;
+        }
+
+        100% {
+            width: 20%;
+            height: 35%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        0% {
+            width: 20%;
+            height: 35%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 14%;
+            height: 12%;
+            border-radius: 1;
+        }
+    }
+
+    .logo img {
+        width: 25%;
+    }
+
+    .landing {
+        margin-bottom: 10%;
+    }
+
+    .contactreq {
+        margin-bottom: 7%;
+    }
+
+    .form-group {
+        width: 100%;
+        margin-bottom: 15%;
+    }
+
+    .footerlogo img {
+        width: 55%;
+    }
+
+    .footerhotline a {
+        width: 70%;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    @keyframes checked-anim {
+        0% {
+            width: 16%;
+            height: 11%;
+            border-radius: 1;
+        }
+
+        100% {
+            width: 25%;
+            height: 35%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        0% {
+            width: 20%;
+            height: 35%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 16%;
+            height: 11%;
+            border-radius: 1;
+        }
+    }
+
+    .logo img {
+        width: 29%;
+    }
+
+    .imgboxleft {
+        width: 100%;
+    }
+
+    .imgboxleft .servicesimg {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .imgboxright {
+        width: 100%;
+    }
+
+    .imgboxright .servicesimg {
+        width: 50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+
+    .leftbody {
+        width: 100%;
+        float: left;
+        margin-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .rightbody {
+        width: 100%;
+        float: left;
+        margin-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .leftbody h2 {
+        text-align: right;
+    }
+
+    .contactreq {
+        margin-bottom: 10%;
+    }
+
+    .footerlogo img {
+        width: 65%;
+    }
 }
