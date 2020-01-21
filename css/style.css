@@ -957,11 +957,6 @@ textarea {
 
     /* Styles for the mobile nav */
     @keyframes checked-anim {
-        /* 50% {
-            width: 3000px;
-            height: 3000px;
-        } */
-
         0% {
             width: 10%;
             height: 10%;
@@ -976,11 +971,6 @@ textarea {
     }
 
     @keyframes not-checked-anim {
-        /* 0% {
-            width: 3000px;
-            height: 3000px;
-        } */
-
         0% {
             width: 15%;
             height: 35%;
@@ -1077,7 +1067,6 @@ textarea {
         height: auto;
         width: 100%;
         text-align: right;
-        /* border: 1px solid orange; */
     }
 
     .box li, .box li a {
@@ -1112,4 +1101,6 @@ textarea {
         margin-top: 3.5%;
         margin-left: 7%;
     }
+
+    
 }

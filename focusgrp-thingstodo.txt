@@ -2,9 +2,10 @@ FOCUSGRP — THINGS TO DO
 
 RESPONSIVE
 - responsive
+- adjusting position of insights cards for 1000px and up
+- redesign insight cards for mobile
 
 OTHER
-- mobile nav which covers full screen
 - talk about a favicon logo design and change the one thats in place
 
 NOT NECESSARY BUT NICE TO HAVE
