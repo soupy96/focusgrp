@@ -1001,6 +1001,10 @@ textarea {
         }
     }
 
+    .leftlanding {
+        margin-left: -6vw;
+    }
+
     #trigger, #burger, #burger:before, #burger:after {
         position: absolute;
         top: 25px;
@@ -1189,6 +1193,7 @@ textarea {
     /* Changing the layout of the insights section */
     .leftinsights {
         width: 70%;
+        margin-left: -6vw;
     }
 
     .leftinsights .redbox{
@@ -1241,6 +1246,16 @@ textarea {
     /* End of changing the layout of the footer section */
 }
 
+@media only screen and (max-width: 900px) {
+    .leftlanding {
+        margin-left: -6.75vw;
+    }
+
+    .leftinsights {
+        margin-left: -6.75vw;
+    }
+}
+
 @media only screen and (max-width: 830px) {
     .footersocials {
         width: 100%;
@@ -1287,7 +1302,13 @@ textarea {
             border-radius: 1;
         }
     }
-    
+
+    .topbar {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     .logo {
         width: 100%;
         float: left;
@@ -1308,6 +1329,32 @@ textarea {
         margin-left: 0%;
     }
 
+    .landingbox {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .leftlanding {
+        margin-left: -7.5vw;
+    }
+
+    .services {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .insights {
+        width: 90%;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .leftinsights {
+        margin-left: -7.5vw;
+    }
+
     .rightinsights {
         display: none;
     }
@@ -1323,6 +1370,12 @@ textarea {
         width: 40%;
         float: left;
         margin: 5%;
+    }
+
+    .maincenter {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }
 
@@ -1353,6 +1406,14 @@ textarea {
             height: 12%;
             border-radius: 1;
         }
+    }
+
+    .leftlanding {
+        margin-left: -9vw;
+    }
+
+    .leftinsights {
+        margin-left: -9vw;
     }
 
     .logo img {
@@ -1434,6 +1495,14 @@ textarea {
         margin-right: 25%;
     }
 
+    .leftlanding {
+        margin-left: -10.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -10.5vw;
+    }
+
     .leftbody {
         width: 100%;
         float: left;
@@ -1461,4 +1530,20 @@ textarea {
     .footerlogo img {
         width: 65%;
     }
+}
+
+@media only screen and (max-width: 500px) {
+    .rightinsightsmobile img {
+        width: 90%;
+        float: left;
+        margin: 5%;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+}
+
+@media only screen and (max-width: 300px) {
+
 }
