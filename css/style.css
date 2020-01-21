@@ -436,6 +436,10 @@ a {
     height: 100%;
 }
 
+.rightinsightsmobile {
+    display: none;
+}
+
 .insightsscroll {
     margin-left: 25%;
     width: 45%;
@@ -750,7 +754,7 @@ textarea {
 }
 
 .footerlogo img {
-    width: 45%;
+    width: 35%;
 }
 
 .footerSCH {
@@ -836,16 +840,16 @@ textarea {
 }
 
 @media only screen and (max-width: 1500px) {
+    .topnav {
+        margin-top: 3%;
+    }
+    
     .leftlanding {
         margin-left: -4.25vw;
     }
 
     .leftinsights {
         margin-left: -4.25vw;
-    }
-
-    .topnav {
-        margin-top: 3%;
     }
 }
 
@@ -860,6 +864,10 @@ textarea {
 }
 
 @media only screen and (max-width: 1400px) {
+    .topnav {
+        margin-top: 3.25%;
+    }
+    
     .logo {
         width: 14%;
     }
@@ -880,8 +888,8 @@ textarea {
         margin-left: -5vw;
     }
 
-    .topnav {
-        margin-top: 3.25%;
+    .footerlogo img {
+        width: 40%;
     }
 }
 
@@ -918,6 +926,10 @@ textarea {
 
     .leftinsights {
         margin-left: -5.25vw;
+    }
+
+    .footerlogo img {
+        width: 45%;
     }
 }
 
@@ -1125,7 +1137,7 @@ textarea {
         width: 160px;
     }
 
-    .redbox {
+    .services .redbox {
         display: none;
     }
 
@@ -1171,4 +1183,45 @@ textarea {
         float: left;
     }
     /* End of changing the layout for the services section */
+
+    /* Changing the layout of the insights section */
+    .leftinsights {
+        width: 70%;
+        float: left;
+    }
+
+    .leftinsights .redbox{
+        margin-bottom: 5%;
+    }
+
+    .rightinsights {
+        width: 100%;
+        float: left;
+        margin-top: 5%;
+    }
+
+    #slider {
+        height: 60vw;
+    }
+    /* End of changing the layout of the insights section */
+
+    /* Changing the layout of the contact section */
+    .contactleft {
+        width: 100%;
+        float: left;
+    }
+
+    .contact .redbox{
+        margin-bottom: 5%;
+    }
+
+    #contactForm {
+        width: 100%;
+    }
+
+    .form-group {
+        width: 40%;
+        margin-right: 10%;
+    }
+    /* End of changing the layout of the contact section */
 }
