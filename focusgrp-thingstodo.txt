@@ -1,7 +1,7 @@
 FOCUSGRP — THINGS TO DO
 
 RESPONSIVE
-- responsive
+- mobile menu adjusting on mobile
 - adjusting position of insights cards for 1000px and up
 - test responsive in other browsers
 

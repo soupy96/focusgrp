@@ -1596,6 +1596,50 @@ textarea {
     }
 }
 
+@media only screen and (max-width: 411px) {
+    @keyframes checked-anim {
+        0% {
+            width: 25%;
+            height: 25%;
+            border-radius: 1;
+        }
+
+        100% {
+            width: 40%;
+            height: 65%;
+            border-radius: 0;
+        }
+    }
+
+    @keyframes not-checked-anim {
+        0% {
+            width: 40%;
+            height: 65%;
+            border-radius: 0;
+        }
+
+        100% {
+            width: 25%;
+            height: 25%;
+            border-radius: 1;
+        }
+    }
+
+    .leftlanding {
+        margin-left: -12.5vw;
+    }
+
+    .leftinsights {
+        margin-left: -12.5vw;
+    }
+    
+    .rightinsightsmobile img {
+        width: 90%;
+        float: left;
+        margin: 5%;
+    }
+}
+
 @media only screen and (max-width: 400px) {
     @keyframes checked-anim {
         0% {
