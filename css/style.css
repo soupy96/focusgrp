@@ -8,7 +8,7 @@ body {
 
 h1 {
     font-size: 4em;
-    margin-bottom: 3%;
+    margin-bottom: 0%;
     color: #2A5769;
 }
 
@@ -174,6 +174,7 @@ a {
     margin-top: 3.25%;
     margin-bottom: 2.5%;
     margin-left: 5%;
+    font-size: 1.15em;
 }
 
 .topnav a {
@@ -183,7 +184,6 @@ a {
     padding: 10px 0px 10px 0px;
     margin: 0px 10px 0px 10px;
     text-decoration: none;
-    font-size: 15px;
 }
 
 /* Underline From Left */
@@ -229,7 +229,7 @@ a {
 
 .headersocials {
     float: right;
-    margin-top: 2.75%;
+    margin-top: 3%;
     margin-right: 5%;
 }
 
@@ -238,7 +238,7 @@ a {
 }
 
 .headersocials img {
-    height: 20px;
+    height: 1.5em;
 }
 
 /* Float */
@@ -355,7 +355,7 @@ a {
     width: 125px;
     height: 3px;
     background-color: #fA9600;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
 }
 
 .landingtext {
@@ -377,13 +377,26 @@ a {
     padding-left: 10%;
     padding-right: 10%;
     padding-top: 10%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
+}
+
+.test {
+    width: 100%;
 }
 
 .leftservices {
     width: 30%;
     float: left;
     height: 100%;
+    background-color: #2A5769;
+}
+
+.leftservices h2 {
+    color: #ffffff;
+}
+
+.leftservices p {
+    color: #ffffff;
 }
 
 .leftbody h2 {
@@ -396,12 +409,22 @@ a {
     height: 100%;
     margin-left: 5%;
     margin-right: 5%;
+    background-color: #ffffff;
 }
 
 .rightservices {
     width: 30%;
     float: right;
     height: 100%;
+    background-color: #FA9600;
+}
+
+.rightservices h2 {
+    color: #ffffff;
+}
+
+.rightservices p {
+    color: #ffffff;
 }
 
 .rightbody h2 {
