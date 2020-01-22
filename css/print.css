@@ -1,7 +1,7 @@
 /* Styles for printing */
 @media print {
     /* Overall styles */
-    .topnav, .headerhotline, .headersocials, .redbox, .rightinsights {
+    .topnav, .headerhotline, .headersocials, .redbox, .rightinsights, .contact, .footerlogo, .footersocials, .footerhotline {
         display: none;
     }
 
@@ -69,7 +69,7 @@
     .leftbody {
         width: 65%;
         float: left;
-        margin-left: 5%;
+        margin-left: 0%;
     }
 
     .leftbody h2 {
@@ -109,4 +109,13 @@
     }
 
     /* Insights section */
+    .insights {
+        padding-top: 5%;
+        padding-bottom: 0%;
+    }
+
+    .leftinsights {
+        width: 100%;
+        margin-left: 0%;
+    }
  }

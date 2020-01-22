@@ -404,6 +404,10 @@ a {
     height: 100%;
 }
 
+.rightbody h2 {
+    display: none;
+}
+
 .servicesimg {
     width: 175px;
 }
