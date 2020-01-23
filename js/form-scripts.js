@@ -36,7 +36,7 @@ function submitForm(){
 }
 
 function formSuccess(){
-    $("#contactForm")[0].reset();
+    // $("#contactForm")[0].reset();
     submitMSG(true, "Thanks for reaching out to us. We'll be in contact shortly!")
 }
 
@@ -52,5 +52,6 @@ function submitMSG(valid, msg){
     } else {
         var msgClasses = "h3 text-center text-danger";
     }
+    $("#form-submit").attr("style", "display: none;");
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }

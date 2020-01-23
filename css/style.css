@@ -784,6 +784,7 @@ textarea {
     width: 24%;
     height: 5%;
     margin-top: 30%;
+    margin-left: 33%;
 }
 /* End of Contact Styles */
 
@@ -880,6 +881,10 @@ textarea {
     #form-submit {
         margin-left: 36%;
     }
+
+    #msgSubmit {
+        margin-left: 32%;
+    }
 }
 
 @media only screen and (max-width: 1700px) {
@@ -901,6 +906,11 @@ textarea {
 
     .insightsscroll {
         margin-left: 40%;
+    }
+
+    #msgSubmit {
+        margin-left: 31%;
+        width: 27%;
     }
 }
 
@@ -932,6 +942,10 @@ textarea {
     #form-submit {
         margin-left: 35%;
     }
+
+    #msgSubmit {
+        margin-left: 30%;
+    }
 }
 
 @media only screen and (max-width: 1500px) {
@@ -953,6 +967,10 @@ textarea {
 
     .leftinsights {
         margin-left: -4.25vw;
+    }
+
+    #msgSubmit {
+        width: 30%;
     }
 }
 
@@ -983,6 +1001,11 @@ textarea {
 
     #form-submit {
         margin-left: 34%;
+    }
+
+    #msgSubmit {
+        margin-left: 29%;
+        width: 33%;
     }
 
     .footerlogo img {
@@ -1018,6 +1041,10 @@ textarea {
     .leftinsights {
         margin-left: -5vw;
     }
+
+    #msgSubmit {
+        margin-left: 28%;
+    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1047,6 +1074,11 @@ textarea {
 
     #form-submit {
         margin-left: 33%;
+    }
+
+    #msgSubmit {
+        margin-left: 27%;
+        width: 38%;
     }
 
     .footerlogo img {
@@ -1089,6 +1121,10 @@ textarea {
 
     .insightsscroll {
         margin-left: 45%;
+    }
+
+    #msgSubmit {
+        margin-left: 26%;
     }
 }
 
@@ -1382,6 +1418,11 @@ textarea {
     #form-submit {
         margin-left: 37%;
     }
+
+    #msgSubmit {
+        margin-left: 33%;
+        width: 31%;
+    }
     /* End of changing the layout of the contact section */
 
     /* Changing the layout of the footer section */
@@ -1427,6 +1468,10 @@ textarea {
 
     .leftinsights {
         margin-left: -6.75vw;
+    }
+
+    #msgSubmit {
+        margin-left: 32%;
     }
 }
 
@@ -1606,6 +1651,17 @@ textarea {
 
     #form-submit {
         margin-left: 40%;
+        margin-bottom: 5%;
+    }
+
+    .last{
+        margin-bottom: 10%;
+    }
+
+    #msgSubmit {
+        margin-left: 32%;
+        width: 39%;
+        margin-bottom: 5%;
     }
 }
 
@@ -1698,6 +1754,12 @@ textarea {
         margin-left: 38%;
     }
 
+    #msgSubmit {
+        margin-left: 31%;
+        width: 46%;
+        margin-bottom: 5%;
+    }
+
     .footerlogo img {
         width: 25%;
     }
@@ -1752,6 +1814,12 @@ textarea {
 
     #form-submit {
         margin-left: 36%;
+    }
+
+    #msgSubmit {
+        margin-left: 28%;
+        width: 55%;
+        margin-bottom: 5%;
     }
 }
 
@@ -1840,6 +1908,12 @@ textarea {
         margin-left: -15.5vw;
     }
 
+    #msgSubmit {
+        margin-left: 23%;
+        width: 69%;
+        margin-bottom: 5%;
+    }
+
     .footerlogo img {
         width: 30%;
     }
@@ -1896,6 +1970,12 @@ textarea {
     
     #form-submit {
         margin-left: 26%;
+    }
+
+    #msgSubmit {
+        margin-left: 15%;
+        width: 79%;
+        margin-bottom: 5%;
     }
 
     .footerlogo img {
