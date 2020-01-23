@@ -1130,6 +1130,10 @@ textarea {
 
 /* Changing the layout to mobile/tablet friendly */
 @media only screen and (max-width: 1000px) {
+    .topbar {
+        margin-top: 2.5%;
+    }
+
     .topnav {
         display: none;
     }
@@ -1330,16 +1334,16 @@ textarea {
 
     .leftbody h2 {
         display: inline;
-        border-bottom: 2px solid #FA9600;
+        font-size: 1.75em;
     }
 
     .centerservices {
-        width: 84%;
+        width: 90%;
         margin: 0px;
         margin-bottom: 5%;
         padding-bottom: 0%;
-        padding-right: 8%;
-        padding-left: 8%;
+        padding-right: 5%;
+        padding-left: 5%;
         padding-top: 0%;
     }
 
@@ -1360,7 +1364,7 @@ textarea {
 
     .rightbody h2 {
         display: inline;
-        border-bottom: 2px solid #FA9600;
+        font-size: 1.75em;
     }
 
     .rightservices {
@@ -1372,6 +1376,10 @@ textarea {
     /* End of changing the layout for the services section */
 
     /* Changing the layout of the insights section */
+    .insights {
+        padding-top: 5%;
+    }
+
     .leftinsights {
         width: 70%;
         margin-left: -6vw;
@@ -1694,12 +1702,22 @@ textarea {
         }
     }
 
+    h1 {
+        font-size: 3em;
+    }
+
     .logo img {
-        width: 29%;
+        width: 35%;
     }
 
     .imgboxleft {
         width: 100%;
+    }
+
+    .imgboxleft h2 {
+        display: block;
+        text-align: center;
+        font-size: 2em;
     }
 
     .imgboxleft .servicesimg {
@@ -1712,6 +1730,12 @@ textarea {
         width: 100%;
     }
 
+    .imgboxright h2 {
+        display: block;
+        text-align: center;
+        font-size: 2em;
+    }
+
     .imgboxright .servicesimg {
         width: 50%;
         margin-left: 25%;
@@ -1720,6 +1744,8 @@ textarea {
 
     .leftlanding {
         margin-left: -10.5vw;
+        width: 100%;
+        text-align: justify;
     }
 
     .leftinsights {
@@ -1730,20 +1756,38 @@ textarea {
         width: 100%;
         float: left;
         margin-left: 0%;
-        margin-top: 5%;
         margin-bottom: 5%;
+    }
+
+    .leftbody h2 {
+        display: none;
     }
 
     .rightbody {
         width: 100%;
         float: left;
         margin-left: 0%;
-        margin-top: 5%;
         margin-bottom: 5%;
+        margin-right: 0;
     }
 
-    .leftbody h2 {
-        text-align: right;
+    .rightbody h2 {
+        display: none;
+    }
+
+    .services {
+        text-align: justify;
+    }
+
+    .centerservices {
+        width: 90%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+
+    .leftinsights {
+        width: 100%;
+        text-align: justify;
     }
 
     .contactreq {
