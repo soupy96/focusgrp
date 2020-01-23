@@ -371,13 +371,9 @@ a {
   
 /* Services Styles */
 .services {
-    width: 80%;
+    width: 100%;
     height: 100%;
     float: left;
-    padding-left: 10%;
-    padding-right: 10%;
-    padding-top: 10%;
-    padding-bottom: 5%;
 }
 
 .test {
@@ -385,10 +381,14 @@ a {
 }
 
 .leftservices {
-    width: 30%;
+    width: 20%;
     float: left;
     height: 100%;
     background-color: #2A5769;
+    padding-left: 10%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    padding-right: 5%;
 }
 
 .leftservices h2 {
@@ -404,19 +404,25 @@ a {
 }
 
 .centerservices {
-    width: 30%;
+    width: 20%;
     float: left;
     height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
     background-color: #ffffff;
+    padding-top: 5%;
+    padding-bottom: 8%;
+    padding-right: 5%;
+    padding-left: 5%;
 }
 
 .rightservices {
-    width: 30%;
-    float: right;
+    width: 20%;
+    float: left;
     height: 100%;
     background-color: #FA9600;
+    padding-top: 5%;
+    padding-bottom: 6%;
+    padding-right: 10%;
+    padding-left: 5%;
 }
 
 .rightservices h2 {
@@ -425,6 +431,10 @@ a {
 
 .rightservices p {
     color: #ffffff;
+}
+
+.rightservices .redbox {
+    background-color: #ffffff;
 }
 
 .rightbody h2 {
@@ -469,7 +479,7 @@ a {
 }
 
 .insightsscroll {
-    margin-left: 25%;
+    margin-left: 37%;
     width: 45%;
 }
 /* End of Insights Styles */
@@ -843,8 +853,16 @@ textarea {
         margin-left: -3.5vw;
     }
 
+    .rightservices  {
+        padding-bottom: 7%;
+    }
+
     .leftinsights {
         margin-left: -3.5vw;
+    }
+
+    .insightsscroll {
+        margin-left: 40%;
     }
 }
 
@@ -853,8 +871,20 @@ textarea {
         margin-left: -3.75vw;
     }
 
+    .centerservices  {
+        padding-bottom: 7%;
+    }
+
+    .rightservices  {
+        padding-bottom: 6%;
+    }
+
     .leftinsights {
         margin-left: -3.75vw;
+    }
+
+    .insightsscroll {
+        margin-left: 40%;
     }
 }
 
@@ -867,8 +897,20 @@ textarea {
         margin-left: -4vw;
     }
 
+    .centerservices  {
+        padding-bottom: 8.5%;
+    }
+
+    .rightservices  {
+        padding-bottom: 7.5%;
+    }
+
     .leftinsights {
         margin-left: -4vw;
+    }
+
+    .insightsscroll {
+        margin-left: 40%;
     }
 }
 
@@ -881,18 +923,16 @@ textarea {
         margin-left: -4.25vw;
     }
 
+    .centerservices  {
+        padding-bottom: 9%;
+    }
+
+    .rightservices  {
+        padding-bottom: 8%;
+    }
+
     .leftinsights {
         margin-left: -4.25vw;
-    }
-}
-
-@media only screen and (max-width: 1500px) {
-    .leftlanding {
-        margin-left: -4.5vw;
-    }
-
-    .leftinsights {
-        margin-left: -4.5vw;
     }
 }
 
@@ -943,6 +983,14 @@ textarea {
         margin-left: -5vw;
     }
 
+    .centerservices  {
+        padding-bottom: 9.5%;
+    }
+
+    .rightservices  {
+        padding-bottom: 9.5%;
+    }
+
     .leftinsights {
         margin-left: -5vw;
     }
@@ -957,8 +1005,20 @@ textarea {
         margin-left: -5.25vw;
     }
 
+    .centerservices  {
+        padding-bottom: 9.75%;
+    }
+
+    .rightservices  {
+        padding-bottom: 8.25%;
+    }
+
     .leftinsights {
         margin-left: -5.25vw;
+    }
+
+    .insightsscroll {
+        margin-left: 43%;
     }
 
     .footerlogo img {
@@ -987,8 +1047,20 @@ textarea {
         margin-left: -5.5vw;
     }
 
+    .centerservices  {
+        padding-bottom: 15%;
+    }
+
+    .rightservices  {
+        padding-bottom: 15%;
+    }
+
     .leftinsights {
         margin-left: -5.5vw;
+    }
+
+    .insightsscroll {
+        margin-left: 45%;
     }
 }
 
@@ -1158,9 +1230,15 @@ textarea {
     }
 
     /* Changing the layout for the services section */
+
+    .services {
+        margin-top: 12%;
+    }
+
     .leftservices {
-        width: 100%;
-        margin-bottom: 10%;
+        width: 90%;
+        margin-bottom: 5%;
+        padding-left: 5%;
     }
 
     .imgboxleft {
@@ -1192,9 +1270,13 @@ textarea {
     }
 
     .centerservices {
-        width: 100%;
+        width: 84%;
         margin: 0px;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
+        padding-bottom: 0%;
+        padding-right: 8%;
+        padding-left: 8%;
+        padding-top: 0%;
     }
 
     .imgboxright {
@@ -1218,8 +1300,10 @@ textarea {
     }
 
     .rightservices {
-        width: 100%;
+        width: 90%;
         float: left;
+        padding-bottom: 5%;
+        padding-right: 5%;
     }
     /* End of changing the layout for the services section */
 
@@ -1387,9 +1471,9 @@ textarea {
     }
 
     .services {
-        width: 90%;
-        padding-left: 5%;
-        padding-right: 5%;
+        width: 100%;
+        padding-left: 0%;
+        padding-right: 0%;
     }
 
     .insights {
