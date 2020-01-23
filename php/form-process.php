@@ -77,7 +77,7 @@ function test_input($data) {
 }
 
 $EmailTo = "michael@blackridgestrategy.com";
-$Subject = "New Message Received";
+$Subject = "New Form Submission Recieved";
 
 // prepare email body text
 $Body = "";
