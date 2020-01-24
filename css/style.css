@@ -1390,6 +1390,7 @@ textarea {
 }
 
 /* Changing the layout to mobile/tablet friendly */
+/* Switches to mobile menu */
 @media only screen and (max-width: 1000px) {
     .mobilenav {
         display: inline;
@@ -1751,6 +1752,7 @@ textarea {
 }
 
 /* Changing the layout to fit for just mobile/smaller screens */
+/* Changing the Desktop insight slider to a mobile slider */
 @media only screen and (max-width: 800px) {
     .topbar {
         width: 90%;
@@ -1840,6 +1842,7 @@ textarea {
     }
 }
 
+/* Contact form feilds go full width */
 @media only screen and (max-width: 700px) {
     .leftlanding {
         margin-left: -9vw;
