@@ -1347,52 +1347,64 @@ textarea {
 
 /* Changing the layout to mobile/tablet friendly */
 @media only screen and (max-width: 1000px) {
-    .topbar {
-        margin-top: 2.5%;
-    }
-
-    .topnav {
-        display: none;
-    }
-
     .mobilenav {
-        display: block;
+        /* display: block;
         right: 0;
         position: fixed;
-        z-index: 998;
+        z-index: 998; */
+        display: inline;
+        z-index: 9999;
+        position: fixed;
+        right: 0;
     }
 
     /* Styles for the mobile nav */
     @keyframes checked-anim {
-        0% {
-            width: 10%;
-            height: 10%;
-            border-radius: 1;
-        }
-
         100% {
-            width: 15%;
-            height: 35%;
+            width: 150px;
+            height: 300px;
             border-radius: 0;
         }
     }
-
     @keyframes not-checked-anim {
         0% {
-            width: 15%;
-            height: 35%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 10%;
-            height: 10%;
-            border-radius: 1;
+            width: 150px;
+            height: 300px;
         }
     }
-
-    .leftlanding {
-        margin-left: -6vw;
+    @keyframes show-links {
+        0% {
+            opacity: 0;
+        }
+        90% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+        }
+    }
+    .div li, .div li a {
+        margin: 75px 0 -55px 0;
+        color: #ffffff;
+        font: 14pt "Roboto", sans-serif;
+        font-weight: 700;
+        line-height: 1.8;
+        text-decoration: none;
+        text-transform: none;
+        list-style: none;
+        outline: 0;
+        display: none;
+        margin-left: 60px;
+        animation: show-links .75s both;
+    }
+    .div li {
+        width: 230px;
+        text-indent: 56px;}
+    a:focus {
+        display: block;
+        color: #333;
+        background-color: #eee;
+        transition: all .5s;
     }
 
     #trigger, #burger, #burger:before, #burger:after {
@@ -1404,26 +1416,22 @@ textarea {
         height: 5px;
         transition: .2s ease;
         cursor: pointer;
-        z-index: 1000;
+        z-index: 999999;
     }
-
     #trigger {
         height: 25px;
         background: none;
     }
-
     #burger:before {
         content: " ";
         top: 10px;
         right: 0;
     }
-
     #burger:after {
         content: " ";
         top: 20px;
         right: 0;
     }
-
     #menu-toggle:checked + #trigger + #burger {
         top: 35px;
         transform: rotate(180deg);
@@ -1437,7 +1445,6 @@ textarea {
         transform: rotate(45deg) translateX(-5px);
         transition: transform .2s ease;
     }
-
     #menu-toggle:checked + #trigger + #burger:after {
         width: 20px;
         top: -9px;
@@ -1445,57 +1452,43 @@ textarea {
         transform: rotate(-45deg) translateX(-5px);
         transition: transform .2s ease;
     }
-
     #menu {
-        position: fixed;
+        position: absolute;
         right: 0;
         margin: 0; padding: 0;
         width: 110px;
         height: 110px;
         background-color: #2A5769;
         border-bottom-left-radius: 100%;
-        -ms-border-bottom-left-radius: 100%;
         box-shadow: 0 2px 5px rgba(0,0,0,0.26);
         animation: not-checked-anim .2s both;
         transition: .2s;
-        z-index: 999;
+        z-index: 99999;
     }
-
+    .div {
+        right: 0;
+        position: absolute;
+        height: auto;
+        width: auto;
+    }
     #menu-toggle:checked + #trigger + #burger + #menu {
         animation: checked-anim 1s ease both;
     }
-
-    #menu-toggle:checked + #trigger ~ #menu > .box li, .box li a {
-        display: block !important;
+    #menu-toggle:checked + #trigger ~ #menu > .div li, .div li a {
+        display: block;
     }
-
     [type="checkbox"]:not(:checked), [type="checkbox"]:checked {
         display: none;
     }
-
-    .box {
-        right: 25px;
-        position: absolute;
-        height: auto;
-        width: 100%;
-        text-align: right;
-    }
-
-    .box li, .box li a {
-        margin: 75px 0 -55px 0;
-        color: #ffffff;
-        font: 14pt "Roboto", sans-serif;
-        font-weight: 700;
-        line-height: 1.8;
-        text-decoration: none;
-        text-transform: none;
-        list-style: none;
-        outline: 0;
-        display: none;
-        z-index: 1002;
-        position: relative;
-    }
     /* End of the styles for the mobile nav */
+    
+    .topbar {
+        margin-top: 2.5%;
+    }
+
+    .topnav {
+        display: none;
+    }
 
     .logo {
         width: 20%;
@@ -1708,34 +1701,6 @@ textarea {
 
 /* Changing the layout to fit for just mobile/smaller screens */
 @media only screen and (max-width: 800px) {
-    @keyframes checked-anim {
-        0% {
-            width: 12%;
-            height: 12%;
-            border-radius: 1;
-        }
-
-        100% {
-            width: 20%;
-            height: 35%;
-            border-radius: 0;
-        }
-    }
-
-    @keyframes not-checked-anim {
-        0% {
-            width: 20%;
-            height: 35%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 12%;
-            height: 12%;
-            border-radius: 1;
-        }
-    }
-
     .topbar {
         width: 90%;
         margin-left: 5%;
@@ -1821,34 +1786,6 @@ textarea {
 }
 
 @media only screen and (max-width: 700px) {
-    @keyframes checked-anim {
-        0% {
-            width: 14%;
-            height: 12%;
-            border-radius: 1;
-        }
-
-        100% {
-            width: 20%;
-            height: 35%;
-            border-radius: 0;
-        }
-    }
-
-    @keyframes not-checked-anim {
-        0% {
-            width: 20%;
-            height: 35%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 14%;
-            height: 12%;
-            border-radius: 1;
-        }
-    }
-
     .leftlanding {
         margin-left: -9vw;
     }
@@ -1891,34 +1828,6 @@ textarea {
 }
 
 @media only screen and (max-width: 600px) {
-    @keyframes checked-anim {
-        0% {
-            width: 16%;
-            height: 11%;
-            border-radius: 1;
-        }
-
-        100% {
-            width: 25%;
-            height: 35%;
-            border-radius: 0;
-        }
-    }
-
-    @keyframes not-checked-anim {
-        0% {
-            width: 20%;
-            height: 35%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 16%;
-            height: 11%;
-            border-radius: 1;
-        }
-    }
-
     h1 {
         font-size: 3em;
     }
@@ -2039,34 +1948,6 @@ textarea {
 }
 
 @media only screen and (max-width: 500px) {
-    @keyframes checked-anim {
-        0% {
-            width: 18%;
-            height: 11%;
-            border-radius: 1;
-        }
-
-        100% {
-            width: 30%;
-            height: 35%;
-            border-radius: 0;
-        }
-    }
-
-    @keyframes not-checked-anim {
-        0% {
-            width: 30%;
-            height: 35%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 18%;
-            height: 11%;
-            border-radius: 1;
-        }
-    }
-
     .leftlanding {
         margin-left: -12.5vw;
     }
@@ -2093,34 +1974,6 @@ textarea {
 }
 
 @media only screen and (max-width: 411px) {
-    @keyframes checked-anim {
-        0% {
-            width: 25%;
-            height: 25%;
-            border-radius: 1;
-        }
-
-        100% {
-            width: 40%;
-            height: 65%;
-            border-radius: 0;
-        }
-    }
-
-    @keyframes not-checked-anim {
-        0% {
-            width: 40%;
-            height: 65%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 25%;
-            height: 25%;
-            border-radius: 1;
-        }
-    }
-
     .leftlanding {
         margin-left: -12.5vw;
     }
@@ -2141,34 +1994,6 @@ textarea {
 }
 
 @media only screen and (max-width: 400px) {
-    @keyframes checked-anim {
-        0% {
-            width: 22%;
-            height: 10%;
-            border-radius: 1;
-        }
-
-        100% {
-            width: 35%;
-            height: 35%;
-            border-radius: 0;
-        }
-    }
-
-    @keyframes not-checked-anim {
-        0% {
-            width: 35%;
-            height: 35%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 22%;
-            height: 10%;
-            border-radius: 1;
-        }
-    }
-
     .leftlanding {
         margin-left: -15.5vw;
     }
@@ -2201,34 +2026,6 @@ textarea {
 }
 
 @media only screen and (max-width: 300px) {
-    @keyframes checked-anim {
-        0% {
-            width: 22%;
-            height: 10%;
-            border-radius: 1;
-        }
-
-        100% {
-            width: 40%;
-            height: 35%;
-            border-radius: 0;
-        }
-    }
-
-    @keyframes not-checked-anim {
-        0% {
-            width: 35%;
-            height: 35%;
-            border-radius: 0;
-        }
-
-        100% {
-            width: 30%;
-            height: 10%;
-            border-radius: 1;
-        }
-    }
-
     .logo img {
         width: 45%;
     }
