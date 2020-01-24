@@ -374,6 +374,7 @@ a {
     width: 100%;
     height: 100%;
     float: left;
+    display: none;
 }
 
 .test {
@@ -482,8 +483,8 @@ a {
     margin-left: 37%;
     width: 45%;
 }
-/* Mobile Insights Slider */
 
+/* Mobile Insights Slider */
 .flickity-enabled.is-draggable {
     -webkit-tap-highlight-color: transparent;
     tap-highlight-color: transparent;
@@ -511,6 +512,7 @@ a {
     cursor: move;
     cursor: -webkit-grab;
     cursor: grab;
+    height: 500px !important;
 }
 
 .flickity-viewport {
@@ -531,12 +533,21 @@ a {
 
 .carousel-cell {
     width: 66%;
-    height: 160px;
+    height: 100%;
     margin-right: 10px;
     margin-bottom: 10px;
-    background: #8C8;
     border-radius: 5px;
     counter-increment: carousel-cell;
+}
+
+.main-insight-card {
+    background-image: url(../insights/mobile-cards/insights-2020-mobile.jpg);
+    background-position: center;
+}
+
+.jan-insight-card {
+    background-image: url(../insights/mobile-cards/jan-insight-mobile.jpg);
+    background-position: center;
 }
 
 .carousel-cell:before, .carousel-cell__number {
@@ -549,19 +560,6 @@ a {
     font-size: 80px;
     color: white;
 }
-
-/* .carousel--not-counting .carousel-cell:before { 
-    content: none; 
-}
-
-.carousel--nav .carousel-cell:before {
-    font-size: 50px;
-    line-height: 80px;
-}
-
-.carousel--resize.is-expanded .carousel-cell:before {
-    line-height: 320px;
-} */
 
 .flickity-prev-next-button.previous { 
     left: 10px; 
@@ -581,6 +579,8 @@ a {
     background: hsla(0, 0%, 100%, 0.75);
     border: none;
     color: #333;
+    /* Hiding the arrows to go to the next card */
+    display: none;
 }
 
 .flickity-button:hover {
@@ -604,17 +604,6 @@ a {
     pointer-events: none;
 }
 
-/* .carousel--prev-next-big-arrow .flickity-button:disabled {
-    display: none;
-} 
-
-.carousel--prev-next-small-outside .flickity-button {
-  background: #333;
-}
-.carousel--prev-next-small-outside .flickity-button:hover {
-  background: #F90;
-} */
-
 button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button;
 }
@@ -637,15 +626,6 @@ button, input, optgroup, select, textarea {
 .flickity-prev-next-button.next { 
     right: 10px; 
 }
-
-/* .flickity-rtl .flickity-prev-next-button.next {
-  right: auto;
-  left: 10px;
-} 
-
-.carousel--prev-next-small-outside .flickity-prev-next-button.next {
-  right: -40px;
-} */
 
 .flickity-page-dots {
     position: absolute;
