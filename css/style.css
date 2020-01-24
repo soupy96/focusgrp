@@ -541,17 +541,18 @@ a {
 }
 
 .main-insight-card {
-    background-image: url(../insights/mobile-cards/insights-2020-mobile.jpg);
+    background-image: url(../insights/mobile-cards/insights-2020-800px.jpg);
     background-position: center;
 }
 
 .jan-insight-card {
-    background-image: url(../insights/mobile-cards/jan-insight-mobile.jpg);
+    background-image: url(../insights/mobile-cards/jan-insight-800px.jpg);
     background-position: center;
 }
 
+/* This displays the number on the card in which we are hiding */
 .carousel-cell:before, .carousel-cell__number {
-    display: block;
+    display: none;
     width: 100px;
     margin: 0 auto;
     content: counter(carousel-cell);
@@ -1078,7 +1079,6 @@ textarea {
 /* End of Footer Styles */
 
 /* Media Queries */
-
 @media only screen and (max-width: 1800px) {
     .leftlanding {
         margin-left: -3.5vw;
@@ -2008,6 +2008,14 @@ textarea {
         text-align: justify;
     }
 
+    .main-insight-card {
+        background-image: url(../insights/mobile-cards/insights-2020-600px.jpg);
+    }
+    
+    .jan-insight-card {
+        background-image: url(../insights/mobile-cards/jan-insight-600px.jpg);
+    }
+
     .contactreq {
         margin-bottom: 10%;
     }
@@ -2168,6 +2176,14 @@ textarea {
 
     .leftinsights {
         margin-left: -15.5vw;
+    }
+
+    .main-insight-card {
+        background-image: url(../insights/mobile-cards/insights-2020-400px.jpg);
+    }
+    
+    .jan-insight-card {
+        background-image: url(../insights/mobile-cards/jan-insight-400px.jpg);
     }
 
     #msgSubmit {
