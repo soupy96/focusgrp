@@ -81,5 +81,3 @@ function onHoverF() {
 function offHoverF() {
     $("#menuImgF").attr('src', 'icons/email-hotline.png');
 }
-
-$('textarea').autoResize();
