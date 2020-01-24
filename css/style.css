@@ -925,10 +925,17 @@ button, input, optgroup, select, textarea {
 }
 
 .form-group {
-    width: 35%;
+    width: 42%;
     margin-bottom: 7%;
     float: left;
-    margin-right: 15%;
+}
+
+.left-form {
+    float: left;
+}
+
+.right-form {
+    float: right;
 }
 
 input {
@@ -985,7 +992,7 @@ textarea {
 }
 
 #form-submit {
-    margin-left: 37%;
+    margin-left: 44%;
     background-color: #fA9600;
     color: #ffffff;
     border: 0px;
@@ -1002,7 +1009,12 @@ textarea {
     width: 24%;
     height: 5%;
     margin-top: 30%;
-    margin-left: 33%;
+    margin-left: 40%;
+}
+
+.text-danger {
+    margin-top: 59% !important;
+    margin-left: 39% !important;
 }
 /* End of Contact Styles */
 
@@ -1096,11 +1108,12 @@ textarea {
     }
 
     #form-submit {
-        margin-left: 36%;
+        margin-left: 43%;
     }
 
-    #msgSubmit {
-        margin-left: 32%;
+    .text-danger {
+        margin-top: 60% !important;
+        margin-left: 38% !important;
     }
 }
 
@@ -1125,8 +1138,11 @@ textarea {
         margin-left: 40%;
     }
 
+    .text-danger {
+        margin-top: 63% !important;
+    }
+
     #msgSubmit {
-        margin-left: 31%;
         width: 27%;
     }
 }
@@ -1156,12 +1172,12 @@ textarea {
         margin-left: 40%;
     }
 
-    #form-submit {
-        margin-left: 35%;
+    .text-danger {
+        margin-top: 65% !important;
     }
 
     #msgSubmit {
-        margin-left: 30%;
+        margin-left: 39%;
     }
 }
 
@@ -1184,6 +1200,15 @@ textarea {
 
     .leftinsights {
         margin-left: -4.25vw;
+    }
+
+    #form-submit {
+        margin-left: 42%;
+    }
+
+    .text-danger {
+        margin-top: 67% !important;
+        margin-left: 37% !important;
     }
 
     #msgSubmit {
@@ -1216,13 +1241,13 @@ textarea {
         margin-left: -5vw;
     }
 
-    #form-submit {
-        margin-left: 34%;
+    #msgSubmit {
+        margin-left: 37%;
+        width: 33%;
     }
 
-    #msgSubmit {
-        margin-left: 29%;
-        width: 33%;
+    .text-danger {
+        margin-top: 70% !important;
     }
 
     .footerlogo img {
@@ -1259,8 +1284,17 @@ textarea {
         margin-left: -5vw;
     }
 
+    #form-submit {
+        margin-left: 41%;
+    }
+
+    .text-danger {
+        margin-top: 74% !important;
+        margin-left: 35% !important;
+    }
+
     #msgSubmit {
-        margin-left: 28%;
+        margin-left: 36%;
     }
 }
 
@@ -1290,11 +1324,16 @@ textarea {
     }
 
     #form-submit {
-        margin-left: 33%;
+        margin-left: 40%;
+    }
+
+    .text-danger {
+        margin-top: 78% !important;
+        margin-left: 34% !important;
     }
 
     #msgSubmit {
-        margin-left: 27%;
+        margin-left: 36%;
         width: 38%;
     }
 
@@ -1340,18 +1379,19 @@ textarea {
         margin-left: 45%;
     }
 
+    .text-danger {
+        margin-top: 83% !important;
+        margin-left: 33% !important;
+    }
+
     #msgSubmit {
-        margin-left: 26%;
+        margin-left: 33%;
     }
 }
 
 /* Changing the layout to mobile/tablet friendly */
 @media only screen and (max-width: 1000px) {
     .mobilenav {
-        /* display: block;
-        right: 0;
-        position: fixed;
-        z-index: 998; */
         display: inline;
         z-index: 9999;
         position: fixed;
@@ -1628,17 +1668,17 @@ textarea {
         width: 100%;
     }
 
-    .form-group {
-        width: 40%;
-        margin-right: 10%;
+    #form-submit {
+        margin-left: 42%;
     }
 
-    #form-submit {
-        margin-left: 37%;
+    .text-danger {
+        margin-top: 69% !important;
+        margin-left: 36% !important;
     }
 
     #msgSubmit {
-        margin-left: 33%;
+        margin-left: 37%;
         width: 31%;
     }
     /* End of changing the layout of the contact section */
@@ -1688,8 +1728,19 @@ textarea {
         margin-left: -6.75vw;
     }
 
+    #form-submit {
+        margin-left: 41%;
+    }
+
+    .text-danger {
+        margin-top: 73% !important;
+        margin-left: 35% !important;
+        width: 50% !important;
+    }
+
     #msgSubmit {
-        margin-left: 32%;
+        margin-left: 36%;
+        width: 34%;
     }
 }
 
@@ -1776,8 +1827,12 @@ textarea {
         margin-right: 5%;
     }
 
-    #form-submit {
-        margin-left: 36%;
+    .text-danger {
+        margin-top: 75% !important;
+    }
+
+    #msgSubmit {
+        margin-left: 35%;
     }
 
     .footerlogo img {
@@ -1802,6 +1857,10 @@ textarea {
         margin-bottom: 10%;
     }
 
+    .maincenter {
+        margin-bottom: 10%;
+    }
+
     .contactreq {
         margin-bottom: 7%;
     }
@@ -1813,17 +1872,20 @@ textarea {
 
     #form-submit {
         margin-left: 40%;
-        margin-bottom: 5%;
     }
 
     .last{
         margin-bottom: 10%;
     }
 
+    .text-danger {
+        margin-top: 189% !important;
+        margin-left: 33% !important;
+    }
+
     #msgSubmit {
-        margin-left: 32%;
+        margin-left: 34%;
         width: 39%;
-        margin-bottom: 5%;
     }
 }
 
@@ -1932,6 +1994,11 @@ textarea {
         margin-left: 38%;
     }
 
+    .text-danger {
+        margin-top: 203% !important;
+        margin-left: 29% !important;
+    }
+
     #msgSubmit {
         margin-left: 31%;
         width: 46%;
@@ -1944,6 +2011,18 @@ textarea {
 
     .footerhotline a {
         width: 25%;
+    }
+}
+
+@media only screen and (max-width: 540px) {
+    .text-danger {
+        margin-top: 215% !important;
+        margin-left: 26% !important;
+    }
+
+    #msgSubmit {
+        margin-left: 28%;
+        width: 51%;
     }
 }
 
@@ -1966,10 +2045,23 @@ textarea {
         margin-left: 36%;
     }
 
+    .text-danger {
+        margin-top: 227% !important;
+        margin-left: 24% !important;
+        width: 75% !important;
+    }
+
     #msgSubmit {
         margin-left: 28%;
         width: 55%;
         margin-bottom: 5%;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .text-danger {
+        margin-top: 241% !important;
+        margin-left: 24% !important;
     }
 }
 
@@ -2010,6 +2102,11 @@ textarea {
         background-image: url(../insights/mobile-cards/jan-insight-400px.jpg);
     }
 
+    .text-danger {
+        margin-top: 257% !important;
+        margin-left: 19% !important;
+    }
+
     #msgSubmit {
         margin-left: 23%;
         width: 69%;
@@ -2022,6 +2119,14 @@ textarea {
 
     .footerhotline a {
         width: 35%;
+    }
+}
+
+@media only screen and (max-width: 360px) {
+    .text-danger {
+        margin-top: 280% !important;
+        margin-left: 14% !important;
+        width: 80% !important;
     }
 }
 

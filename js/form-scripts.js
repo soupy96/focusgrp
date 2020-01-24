@@ -49,9 +49,9 @@ function formError(){
 function submitMSG(valid, msg){
     if(valid){
         var msgClasses = "h3 text-center tada animated text-success";
+        $("#form-submit").attr("style", "display: none;");
     } else {
         var msgClasses = "h3 text-center text-danger";
     }
-    $("#form-submit").attr("style", "display: none;");
     $("#msgSubmit").removeClass().addClass(msgClasses).text(msg);
 }
