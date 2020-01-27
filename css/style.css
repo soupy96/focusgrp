@@ -171,7 +171,8 @@ a {
 
 #scroll:hover {
     background-color:#FA9600;
-    opacity:1;filter:"alpha(opacity=100)";
+    opacity:1;
+    filter:"alpha(opacity=100)";
     -ms-filter:"alpha(opacity=100)";
 }
 /* End of Back to top */
@@ -514,7 +515,6 @@ a {
 /* Mobile Insights Slider */
 .flickity-enabled.is-draggable {
     -webkit-tap-highlight-color: transparent;
-    tap-highlight-color: transparent;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
