@@ -1431,7 +1431,7 @@ textarea {
 
     .div li, .div li a {
         margin: 75px 0 -55px 0;
-        color: red;
+        color: #ffffff;
         font: 14pt "Roboto", sans-serif;
         font-weight: 700;
         line-height: 1.8;
@@ -1441,7 +1441,7 @@ textarea {
         outline: 0;
         display: none;
         margin-left: 60px;
-        animation: show-links 1s both;
+        animation: show-links .75s both;
     }
 
     .div li {
