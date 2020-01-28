@@ -356,6 +356,20 @@ a {
 }
 /* End of Header Styles */
 
+/* Start of the full width slider */
+.fullwidthslider {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.left-slider {
+    width: 50%;
+    height: 100%;
+    float: left;
+}
+/* End of the full width slider */
+
 /* Landing Styles */
 .landing {
     width: 100%;

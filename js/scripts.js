@@ -21,6 +21,12 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600); 
         return false; 
     }); 
+    $(".lazy").slick({
+      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 2000
+    });
 });
 
 // This is for the scrolling animations
@@ -81,3 +87,4 @@ function onHoverF() {
 function offHoverF() {
     $("#menuImgF").attr('src', 'icons/email-hotline.png');
 }
+
