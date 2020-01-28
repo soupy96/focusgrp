@@ -20,14 +20,55 @@ $(document).ready(function(){
     $('#scroll').click(function(){ 
         $("html, body").animate({ scrollTop: 0 }, 600); 
         return false; 
-    }); 
+    });
+    // This code starts the slick slider with the setting underneath it like autoplay and the time that it spends on one card
     $(".lazy").slick({
       lazyLoad: 'ondemand', // ondemand progressive anticipated
       infinite: true,
       autoplay: true,
-      autoplaySpeed: 2000
+      autoplaySpeed: 5000
     });
 });
+
+// 
+var mutationObserver = new MutationObserver(function(mutations) {
+  mutations.forEach(function (mutation) {
+    let slidewhole = document.getElementsByClassName("slick-track");
+
+    let slidelist = slidewhole[0].children;
+
+    for (let x = 1; x < slidelist.length; x++) {
+      let slideid = slidelist[x].id;
+      if (slideid) {
+        let slideatt = document.getElementById(slideid).attributes;
+        for (let y = 0; y < slideatt.length; y++) {
+          if (slideatt[y].name === "aria-hidden") {
+            if (slideatt[y].value === "false") {
+              document.getElementById("mainslidername").innerHTML = slideid;
+              console.log(slideid);
+            }
+          }
+        }
+      }
+    }
+  });
+});
+
+// This gets the element with the id #allslides to use with the mutatuionObserver
+let elementToObserve = document.getElementById("allslides");
+
+// These are the things we are telling the mutation observer to watch a change for
+let config = {
+  attributes: true,
+  characterData: true,
+  childList: true,
+  subtree: true,
+  attributeOldValue: true,
+  characterDataOldValue: true
+}
+
+// This calls the function with the element and the settings that we previously made
+mutationObserver.observe(elementToObserve, config);
 
 // This is for the scrolling animations
 // Detect request animation frame

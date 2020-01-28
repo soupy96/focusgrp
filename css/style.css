@@ -363,10 +363,25 @@ a {
     float: left;
 }
 
+.slick-next {
+    display: none !important;
+}
+
+.slick-prev {
+    display: none !important
+}
+
 .left-slider {
     width: 50%;
     height: 100%;
     float: left;
+}
+
+.right-slider {
+    width: 50%;
+    height: 600px;
+    float: right;
+    background-color: red;
 }
 /* End of the full width slider */
 
