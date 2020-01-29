@@ -30,7 +30,7 @@ $(document).ready(function(){
     });
 });
 
-// 
+// This dynamically gets the id of the slide and outputs it into the right side of the carousel section
 var mutationObserver = new MutationObserver(function(mutations) {
   mutations.forEach(function (mutation) {
     let slidewhole = document.getElementsByClassName("slick-track");
@@ -67,7 +67,7 @@ let config = {
   characterDataOldValue: true
 }
 
-// This calls the function with the element and the settings that we previously made
+// This calls the function with the element and the settings that we previously made. It calls this whenever something in the #allslides changes
 mutationObserver.observe(elementToObserve, config);
 
 // This is for the scrolling animations
