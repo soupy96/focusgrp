@@ -411,6 +411,17 @@ a {
     background-size: 100%;
     background-repeat: no-repeat;
 }
+
+.fullwidthimgtext {
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 40%;
+    margin-top: 18%;
+}
+
+.fullwidthimgtext h1, .fullwidthimgtext p {
+    color: #ffffff;
+}
 /* End of the full width img */
 
 /* Start of the full width slider */
