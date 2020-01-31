@@ -425,7 +425,7 @@ a {
 /* End of the full width img */
 
 /* Start of the full width slider */
-/* .fullwidthslider {
+.fullwidthslider {
     width: 100%;
     height: 100%;
     float: left;
@@ -461,7 +461,12 @@ a {
 
 .slick-track {
     height: 100%;
-} */
+}
+
+.slick-slide img {
+    width: 100%;
+    height: 100%;
+}
 /* End of the full width slider */
 
 .whoweare {
