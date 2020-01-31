@@ -22,67 +22,67 @@ $(document).ready(function(){
         return false; 
     });
     // This code starts the slick slider with the setting underneath it like autoplay and the time that it spends on one card
-    $(".lazy").slick({
-      lazyLoad: 'ondemand', // ondemand progressive anticipated
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 1500
-    });
+    // $(".lazy").slick({
+    //   lazyLoad: 'ondemand', // ondemand progressive anticipated
+    //   infinite: true,
+    //   autoplay: true,
+    //   autoplaySpeed: 1500
+    // });
 });
 
 // This dynamically gets the id of the slide and outputs it into the right side of the carousel section
-var mutationObserver = new MutationObserver(function(mutations) {
-  mutations.forEach(function (mutation) {
-    let slidewhole = document.getElementsByClassName("slick-track");
+// var mutationObserver = new MutationObserver(function(mutations) {
+//   mutations.forEach(function (mutation) {
+//     let slidewhole = document.getElementsByClassName("slick-track");
 
-    let slidelist = slidewhole[0].children;
+//     let slidelist = slidewhole[0].children;
 
-    for (let x = 1; x < slidelist.length; x++) {
-      let slideid = slidelist[x].id;
-      if (slideid) {
-        let slideatt = document.getElementById(slideid).attributes;
-        for (let y = 0; y < slideatt.length; y++) {
-          if (slideatt[y].name === "aria-hidden") {
-            if (slideatt[y].value === "false") {
-              typeWriter(slideid);
-              // document.getElementById("mainslidername").innerHTML = slideid;
-            }
-          }
-        }
-      }
-    }
-  });
-});
+//     for (let x = 1; x < slidelist.length; x++) {
+//       let slideid = slidelist[x].id;
+//       if (slideid) {
+//         let slideatt = document.getElementById(slideid).attributes;
+//         for (let y = 0; y < slideatt.length; y++) {
+//           if (slideatt[y].name === "aria-hidden") {
+//             if (slideatt[y].value === "false") {
+//               // typeWriter(slideid);
+//               document.getElementById("mainslidername").innerHTML = slideid;
+//             }
+//           }
+//         }
+//       }
+//     }
+//   });
+// });
 
-var i = 0;
-var speed = 50;
+// var i = 0;
+// var speed = 50;
 
-function typeWriter(slideid) {
+// function typeWriter(slideid) {
 
-  var SI = arguments[0];
+//   var SI = arguments[0];
 
-  if (i < SI.length) {
-    document.getElementById("mainslidername").innerHTML += .charAt(i);
-    i++;
-    setTimeout(typeWriter, speed);
-  }
-}
+//   if (i < SI.length) {
+//     document.getElementById("mainslidername").innerHTML += .charAt(i);
+//     i++;
+//     setTimeout(typeWriter, speed);
+//   }
+// }
 
 // This gets the element with the id #allslides to use with the mutatuionObserver
-let elementToObserve = document.getElementById("allslides");
+// let elementToObserve = document.getElementById("allslides");
 
-// These are the things we are telling the mutation observer to watch a change for
-let config = {
-  attributes: true,
-  characterData: true,
-  childList: true,
-  subtree: true,
-  attributeOldValue: true,
-  characterDataOldValue: true
-}
+// // These are the things we are telling the mutation observer to watch a change for
+// let config = {
+//   attributes: true,
+//   characterData: true,
+//   childList: true,
+//   subtree: true,
+//   attributeOldValue: true,
+//   characterDataOldValue: true
+// }
 
-// This calls the function with the element and the settings that we previously made. It calls this whenever something in the #allslides changes
-mutationObserver.observe(elementToObserve, config);
+// // This calls the function with the element and the settings that we previously made. It calls this whenever something in the #allslides changes
+// mutationObserver.observe(elementToObserve, config);
 
 // This is for the scrolling animations
 // Detect request animation frame
