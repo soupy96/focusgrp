@@ -187,8 +187,7 @@ a {
     padding-right: 10%;
     position: absolute;
     z-index: 10;
-    background-color: #2A5769;
-    opacity: 0.5 !important;
+    background-color: rgba(42, 87, 105, 0.5);
 }
 
 .logo {
@@ -402,7 +401,7 @@ a {
     width: 100vw;
     height: 100vh;
     float: left;
-    background-image: url(../icons/mountain.jpg);
+    background-image: url(../icons/mountain.png);
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
@@ -414,16 +413,28 @@ a {
     width: 50%;
     margin-left: 10%;
     margin-right: 40%;
-    margin-top: 41.5vh;
+    margin-top: 43vh;
+}
+
+.fullwidthimgtext .redbox {
+    margin-bottom: 2.5%;
 }
 
 .fullwidthimgtext h1, .fullwidthimgtext p {
     color: #ffffff;
 }
 
-/* .fullwidthimgtext {
-    font-size: .75em !important;
-} */
+.fullwidthimgtext h1 {
+    font-size: 5em;
+}
+
+.fullwidthimgtext p {
+    font-size: 1.25em;
+}
+
+.orangeletter {
+    color: #FA9600;
+}
 
 .porange {
     border-bottom: 1px solid #FA9600;
