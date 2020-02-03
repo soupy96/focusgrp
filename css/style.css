@@ -183,11 +183,12 @@ a {
 .topbar {
     width: 80%;
     float: left;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
+    padding-left: 10%;
+    padding-right: 10%;
     position: absolute;
     z-index: 10;
+    background-color: #2A5769;
+    opacity: 0.5 !important;
 }
 
 .logo {
@@ -402,7 +403,7 @@ a {
     height: 100vh;
     float: left;
     background-image: url(../icons/mountain.jpg);
-    background-position: center bottom;
+    background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
