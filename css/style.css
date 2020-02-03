@@ -402,7 +402,7 @@ a {
     height: 100vh;
     float: left;
     background-image: url(../icons/rowing.jpg);
-    background-position: center center;
+    background-position: center top;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
