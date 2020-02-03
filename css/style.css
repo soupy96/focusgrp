@@ -419,6 +419,20 @@ a {
 .fullwidthimgtext h1, .fullwidthimgtext p {
     color: #ffffff;
 }
+
+/* .fullwidthimgtext {
+    font-size: .75em !important;
+} */
+
+.porange {
+    border-bottom: 1px solid #FA9600;
+    margin-bottom: 5px;
+    width: 20%;
+}
+
+.sech1 {
+    margin-top: 2.5%;
+}
 /* End of the full width img */
 
 /* Start of the full width slider */
