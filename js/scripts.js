@@ -143,3 +143,56 @@ function offHoverF() {
     $("#menuImgF").attr('src', 'icons/email-hotline.png');
 }
 
+var myVar;
+
+function myFunction() {
+  myVar = setTimeout(typeWriter, 3000);
+}
+
+// function alertFunc() {
+  
+
+  function typeWriter() {
+    var s = 0;
+
+    var test = document.getElementById("typetext").innerHTML;
+
+    var res1 = "Results1";
+    var res2 = "Results2";
+    var res3 = "Results3";
+
+    var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+    if (test === res1) {
+      if (s < res2.length) {
+        if (document.getElementById("typetext").innerHTML = "") {
+          document.getElementById("typetext").innerHTML += res2.charAt(s);
+          s++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    }
+
+    if (test === res2) {
+      if (s < res3.length) {
+        document.getElementById("typetext").innerHTML = "";
+        if (document.getElementById("typetext").innerHTML = "") {
+          document.getElementById("typetext").innerHTML += res3.charAt(s);
+          s++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    }
+
+    if (test === res3) {
+      if (s < res1.length) {
+        document.getElementById("typetext").innerHTML = "";
+        if (document.getElementById("typetext").innerHTML = "") {
+          document.getElementById("typetext").innerHTML += res1.charAt(s);
+          s++;
+          setTimeout(typeWriter, speed);
+        }
+      }
+    }
+  // }
+}

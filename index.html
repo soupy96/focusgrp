@@ -40,7 +40,7 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
 </head>
 
-<body>
+<body onload="myFunction()">
     <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -110,7 +110,7 @@
         <div class="fullwidthimg">
             <div class="fullwidthimgtext">
                 <div>
-                    <h1>Focused on Results.</h1>
+                    <h1>Focused on <span id="typetext">Results1</span>.</h1>
                 </div>
                 <div class="redbox"></div>
                 <div class="landingtext">
@@ -361,5 +361,5 @@
             });
         });
     </script>
-</body>
+</body onload="myFunction()">
 </html>
