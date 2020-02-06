@@ -1648,7 +1648,7 @@ textarea {
     /* End of the styles for the mobile nav */
     
     .topbar {
-        margin-top: 2.5%;
+        padding-bottom: 2.5%;
     }
 
     .topnav {
@@ -1885,12 +1885,6 @@ textarea {
 /* Changing the layout to fit for just mobile/smaller screens */
 /* Changing the Desktop insight slider to a mobile slider */
 @media only screen and (max-width: 800px) {
-    .topbar {
-        width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-
     .logo {
         width: 100%;
         float: left;
