@@ -1759,7 +1759,8 @@ textarea {
 
     /* Changing the layout of the insights section */
     .insights {
-        padding-top: 5%;
+        padding-top: 15%;
+        padding-bottom: 15%;
     }
 
     .leftinsights {
