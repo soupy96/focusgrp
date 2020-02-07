@@ -64,7 +64,8 @@ if (empty($_POST["comment"])) {
 
 // If the company is empty or invalid
 if (empty($_POST["company"])) {
-    $errorMSG .= "Company is required";
+    // $errorMSG .= "Company is required";
+    $company = "User did not leave a company name";
 } else {
     $company = test_input($_POST["company"]);
 }
@@ -76,8 +77,8 @@ function test_input($data) {
     return $data;
 }
 
-//$EmailTo = "michael@blackridgestrategy.com"; //This is for testing
-$EmailTo = "amir@focusgrp.ca"; // This is for live
+$EmailTo = "michael@blackridgestrategy.com"; //This is for testing
+// $EmailTo = "amir@focusgrp.ca"; // This is for live
 $Subject = "New Form Submission Recieved";
 
 // prepare email body text
