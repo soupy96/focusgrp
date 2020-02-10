@@ -671,8 +671,8 @@ a {
     counter-increment: carousel-cell;
 }
 
-.main-insight-card {
-    background-image: url(../insights/mobile-cards/insights-2020-800px.jpg);
+.feb-insight-card {
+    background-image: url(../insights/mobile-cards/feb-insight-800px.jpg);
     background-position: center;
 }
 
@@ -2122,6 +2122,10 @@ textarea {
         background-image: url(../insights/mobile-cards/jan-insight-600px.jpg);
     }
 
+    .feb-insight-card {
+        background-image: url(../insights/mobile-cards/feb-insight-600px.jpg);
+    }
+
     .contactreq {
         margin-bottom: 10%;
     }
@@ -2236,6 +2240,10 @@ textarea {
     
     .jan-insight-card {
         background-image: url(../insights/mobile-cards/jan-insight-400px.jpg);
+    }
+
+    .feb-insight-card {
+        background-image: url(../insights/mobile-cards/feb-insight-400px.jpg);
     }
 
     .text-danger {
