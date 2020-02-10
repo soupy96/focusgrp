@@ -360,42 +360,6 @@ a {
 }
 /* End of Header Styles */
 
-/* Landing Styles */
-.landing {
-    width: 100%;
-    height: 100%;
-    float: left;
-}
-
-.landingbox {
-    width: 80%;
-    float: left;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 10%;
-    margin-bottom: 10%;
-}
-
-.leftlanding {
-    width: 80%;
-    float: left;
-    height: 100%;
-    margin-left: -3vw;
-}
-
-.redbox {
-    width: 125px;
-    height: 3px;
-    background-color: #fA9600;
-    margin-bottom: 5%;
-}
-
-.landingtext {
-    font-size: 1.25em;
-}
-/* End of Landing Styles */
-
 /* Start of the full width img */
 .fullwidthimg {
     width: 100vw;
@@ -447,6 +411,49 @@ a {
 }
 /* End of the full width img */
 
+/* Who we are Styles */
+.whoweare {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding-bottom: 12%;
+    background-color: #ffffff;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.landingbox {
+    width: 80%;
+    float: left;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6%;
+}
+
+.leftlanding {
+    width: 80%;
+    float: left;
+    height: 100%;
+    margin-left: -3vw;
+}
+
+.redbox {
+    width: 125px;
+    height: 3px;
+    background-color: #fA9600;
+    margin-bottom: 5%;
+}
+
+.landingtext {
+    font-size: 1.25em;
+}
+/* End of Landing Styles */
+
 /* Start of the full width slider */
 .fullwidthslider {
     width: 100%;
@@ -491,14 +498,6 @@ a {
     height: 100%;
 }
 /* End of the full width slider */
-
-.whoweare {
-    width: 100%;
-    height: 100%;
-    float: left;
-    padding-bottom: 12%;
-    background-color: #ffffff;
-}
   
 /* Services Styles */
 .services {
