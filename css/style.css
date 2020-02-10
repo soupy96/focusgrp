@@ -1398,10 +1398,6 @@ textarea {
     .leftinsights {
         margin-left: -5vw;
     }
-
-    .text-danger {
-        margin-left: 35% !important;
-    }
 }
 
 @media only screen and (max-width: 1200px) {
@@ -1914,10 +1910,6 @@ textarea {
 
     .text-danger {
         margin-top: 75% !important;
-    }
-
-    #msgSubmit {
-        margin-left: 35%;
     }
 
     .footerlogo img {
