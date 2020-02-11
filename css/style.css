@@ -190,6 +190,14 @@ a {
     background-color: rgba(42, 87, 105, 0.5);
 }
 
+.topbarside {
+    width: 80%;
+    float: left;
+    padding-left: 10%;
+    padding-right: 10%;
+    background-color: rgba(42, 87, 105, 1);
+}
+
 .logo {
     float: left;
     width: 11%;
@@ -1226,6 +1234,69 @@ textarea {
 }
 /* End of Footer Styles */
 
+/* Start of the main content on the side pages */
+.mainbox {
+    width: 80%;
+    padding-left: 10%;
+    padding-right: 10%;
+    height: 100%;
+    float: left;
+    background-color: red;
+}
+
+.innercontent {
+    width: 100%;
+    height: 100%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    float: left;
+    background-color: white;
+}
+
+.topinsightbar {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: yellow;
+}
+
+.insightlogo {
+    float: left;
+}
+
+.author {
+    float: right;
+    width: 150px;
+}
+
+.insightcopy {
+    width: 100%;
+    height: 100%;
+    float: left;
+    background-color: green;
+}
+
+.signoff {
+    float: right;
+}
+
+.signoff span {
+    color: #FA9600;
+}
+
+.shareinsight {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
+.shareinsightbox {
+    width: 25%;
+    height: 100%;
+    float: right;
+    background-color: hotpink;
+}
+/* End of the main content on the side pages */
 /* Media Queries */
 @media only screen and (max-width: 1800px) {
     .leftlanding {
