@@ -373,6 +373,18 @@ a {
     background-color: #ffffff;
 }
 
+.fullwidthimgfeb {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background-image: url(../insights/feb-big-pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
 .fullwidthimgtext {
     width: 50%;
     margin-left: 10%;
@@ -393,6 +405,29 @@ a {
 }
 
 .fullwidthimgtext p {
+    font-size: 1.25em;
+}
+
+.fullwidthimgtextfeb {
+    width: 50%;
+    margin-left: 10%;
+    margin-right: 40%;
+    margin-top: 32vh;
+}
+
+.fullwidthimgtextfeb .redbox {
+    margin-bottom: 2.5%;
+}
+
+.fullwidthimgtextfeb h1, .fullwidthimgtextfeb p {
+    color: #ffffff;
+}
+
+.fullwidthimgtextfeb h1 {
+    font-size: 5em;
+}
+
+.fullwidthimgtextfeb p {
     font-size: 1.25em;
 }
 
@@ -459,6 +494,15 @@ a {
 
 .landingtext .redbox {
     margin-bottom: 2%;
+}
+
+.landingtext img, .blogimgtxt {
+    float: left;
+}
+
+.blogimgtxt {
+    margin: 0px;
+    margin-left: 1.5%;
 }
 /* End of Landing Styles */
 
@@ -1235,7 +1279,7 @@ textarea {
     padding-right: 10%;
     height: 100%;
     float: left;
-    background-color: red;
+    background-color: #ffffff;
 }
 
 .innercontent {
@@ -1244,37 +1288,15 @@ textarea {
     padding-top: 5%;
     padding-bottom: 5%;
     float: left;
-    background-color: white;
-}
-
-.topinsightbar {
-    width: 100%;
-    height: 100%;
-    float: left;
-    background-color: yellow;
-}
-
-.insightlogo {
-    float: left;
-}
-
-.author {
-    float: right;
-    width: 150px;
 }
 
 .insightcopy {
     width: 100%;
     height: 100%;
     float: left;
-    background-color: green;
 }
 
-.signoff {
-    float: right;
-}
-
-.signoff span {
+.insightcopy span {
     color: #FA9600;
 }
 
@@ -1288,7 +1310,6 @@ textarea {
     width: 25%;
     height: 100%;
     float: right;
-    background-color: hotpink;
 }
 /* End of the main content on the side pages */
 /* Media Queries */
