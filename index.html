@@ -35,7 +35,7 @@
     <!-- Local Stylesheets -->
     <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="css/print.css">
-    <link rel="stylesheet" type="text/css" href="css/popup.css" />
+    <!-- <link rel="stylesheet" type="text/css" href="css/popup.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/slick.css" /> -->
     <!-- <link rel="stylesheet" type="text/css" href="css/slick-theme.css" /> -->
 </head>
@@ -51,6 +51,7 @@
         <label id="burger" for="menu-toggle"></label>
         <ul id="menu">
             <div class="div">
+                <li><a href="#home">Home</a></li>
                 <li><a href="#about">About Us</a></li>
                 <li><a href="#services">Services</a></li>
                 <li><a href="#insights">Insights</a></li>
@@ -66,6 +67,7 @@
                 </a>
             </div>
             <div class="topnav" id="myTopnav">
+                <a href="#home" class="hvr-underline-from-left ">Home</a>
                 <a href="#about" class="hvr-underline-from-left ">About Us</a>
                 <a href="#services" class="hvr-underline-from-left ">Services</a>
                 <a href="#insights" class="hvr-underline-from-left ">Insights</a>
@@ -253,12 +255,12 @@
                 </p>
             </div>
         </div>
-        <div id="insights" class="rightinsights">
+        <!-- <div id="insights" class="rightinsights">
             <div class="insightsscroll inline-photo-rightleft show-on-scroll">
                 <section id="slider">
                     <input type="radio" name="slider" id="s1" checked>
                     <input type="radio" name="slider" id="s2">
-                    <!-- <input type="radio" name="slider" id="s3">
+                    <input type="radio" name="slider" id="s3">
                     <input type="radio" name="slider" id="s4">
                     <input type="radio" name="slider" id="s5">
                     <input type="radio" name="slider" id="s6">
@@ -268,16 +270,16 @@
                     <input type="radio" name="slider" id="s10">
                     <input type="radio" name="slider" id="s11">
                     <input type="radio" name="slider" id="s12">
-                    <input type="radio" name="slider" id="s13"> -->
+                    <input type="radio" name="slider" id="s13">
                     <label for="s1" id="slide1">
-                        <a href="./jan-2020-insight.html" class="trigger_popup_fricc1"></a>
+                        <a href="./jan-2020-insight.html" class="trigger_popup_fricc1"></a> -->
                         <!-- <div class="hover_bkgr_fricc1">
                             <span class="helper1"></span>
                             <div>
                                 <div class="popupCloseButton1">&times;</div>
                                 <iframe src="./insights/feb-2020-insight.pdf" width="100%" height="600px"></iframe>
                             </div>
-                        </div> -->
+                        </div>
                     </label>
                     <label for="s2" id="slide2">
                         <a class="trigger_popup_fricc2"></a>
@@ -289,7 +291,7 @@
                             </div>
                         </div>
                     </label>
-                    <!-- <label for="s3" id="slide3"></label>
+                    <label for="s3" id="slide3"></label>
                     <label for="s4" id="slide4"></label>
                     <label for="s5" id="slide5"></label>
                     <label for="s6" id="slide6"></label>
@@ -299,17 +301,14 @@
                     <label for="s10" id="slide10"></label>
                     <label for="s11" id="slide11"></label>
                     <label for="s12" id="slide12"></label>
-                    <label for="s13" id="slide13"></label> -->
+                    <label for="s13" id="slide13"></label>
                 </section>
             </div>
-        </div>
-        <div class="rightinsightsmobile">
+        </div> -->
+        <div id="insights" class="rightinsightsmobile">
             <div class="carousel" data-flickity='{ "wrapAround": true }'>
-                <!-- <a class="carousel-cell main-insight-card"></a> -->
-                <a class="carousel-cell feb-insight-card" href="./insights/feb-2020-insight.pdf" target="_blank"
-                    download="./insights/feb-2020-insight.pdf"></a>
-                <a class="carousel-cell jan-insight-card" href="./insights/jan-2020-insight.pdf" target="_blank"
-                    download="./insights/jan-2020-insight.pdf"></a>
+                <a class="carousel-cell feb-insight-card" href="./feb-2020-insight.html"></a>
+                <a class="carousel-cell jan-insight-card" href="./jan-2020-insight.html"></a>
                 <div class="carousel-cell"></div>
             </div>
         </div>
@@ -376,15 +375,20 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
     <!-- <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js'></script> -->
     <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> -->
+    <!-- Cant Remember what this is for -->
     <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+    <!-- For the contact form -->
     <script type="text/javascript" src="js/validator.min.js"></script>
     <script type="text/javascript" src="js/form-scripts.js"></script>
-    <script type="text/javascript" src="js/popup.js"></script>
+    <!-- For the insight slider -->
     <script type="text/javascript" src="js/flickity-docs.min.js"></script>
+    <!-- For the Full width img slider -->
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script> -->
     <!-- <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script> -->
     <!-- <script type="text/javascript" src="js/slick.min.js"></script> -->
+    <!-- Written Script -->
     <script type="text/javascript" src="js/scripts.js"></script>
+    <!-- Google stuff -->
     <script src="https://www.google.com/jsapi"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
@@ -395,6 +399,7 @@
         gtag('js', new Date());
         gtag('config', 'UA-155136475-2');
     </script>
+    <!-- Google Recaptcha V3 -->
     <script src="https://www.google.com/recaptcha/api.js?render=6LeGu88UAAAAAM_aiFkXlP99wGFJGDu7GbxBEOuB"></script>
     <script>
         grecaptcha.ready(function () {
