@@ -1297,6 +1297,10 @@ textarea {
     float: left;
 }
 
+ul {
+    color: #2A5769;
+}
+
 .insightcopy span {
     color: #FA9600;
 }
