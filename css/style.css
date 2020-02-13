@@ -1292,7 +1292,7 @@ textarea {
 }
 
 .insightcopy {
-    width: 100%;
+    width: 70%;
     height: 100%;
     float: left;
 }
@@ -1303,6 +1303,16 @@ ul {
 
 .insightcopy span {
     color: #FA9600;
+}
+
+.stickybar {
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    position: sticky;
+    top: 40%;
+    right: 0px;
+    float: right;
 }
 
 .shareinsight {
