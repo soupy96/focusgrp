@@ -1308,7 +1308,7 @@ ul {
 .stickybar {
     width: 200px;
     height: 200px;
-    background-color: blue;
+    background-color: #2A5769;
     position: sticky;
     top: 40%;
     right: 0px;
@@ -1317,14 +1317,36 @@ ul {
 
 .shareinsight {
     width: 100%;
-    height: 100%;
+    height: 50%;
     float: left;
 }
 
 .shareinsightbox {
-    width: 25%;
+    width: 100%;
     height: 100%;
-    float: right;
+    float: left;
+}
+
+.sharetext img {
+    width: 15px;
+}
+
+.sharetext h2 {
+    color: #ffffff;
+    text-align: center;
+    font-weight: 300;
+}
+
+.shareinsightbox .headersocials {
+    float: left;
+    margin: 0px;
+    margin-top: 4%;
+}
+
+.subscribebox {
+    width: 100%;
+    height: 50%;
+    float: left;
 }
 /* End of the main content on the side pages */
 /* Media Queries */
