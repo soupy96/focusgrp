@@ -1160,7 +1160,7 @@ ul {
 
 .stickybar {
     width: 200px;
-    height: 300px;
+    height: 450px;
     /* background-color: #2A5769; */
     position: sticky;
     top: 40%;
@@ -1170,10 +1170,11 @@ ul {
 
 .shareinsight {
     width: 100%;
-    height: 40%;
+    height: 28%;
     float: left;
     border-bottom: 1px solid #2A5769;
     padding-bottom: 2%;
+    margin-bottom: 1%;
 }
 
 .shareinsightbox {
@@ -1243,7 +1244,7 @@ ul {
 }
 
 .nl-danger {
-    margin-top: 15% !important;
+    padding-top: 35% !important;
 }
 /* End of the main content on the side pages */
 /* Media Queries */
