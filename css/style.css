@@ -682,6 +682,11 @@ a {
     counter-increment: carousel-cell;
 }
 
+.feb2-insight-card {
+    background-image: url(../insights/mobile-cards/feb2-insight-800px.jpg);
+    background-position: center;
+}
+
 .feb-insight-card {
     background-image: url(../insights/mobile-cards/feb-insight-800px.jpg);
     background-position: center;
@@ -1056,6 +1061,30 @@ textarea {
 /* End of Footer Styles */
 
 /* Start of the main content on the side pages */
+.fullwidthimgjan {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background-image: url(../insights/jan-big-pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+.fullwidthimgfeb2 {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background-image: url(../insights/feb2-big-pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
 .fullwidthimgfeb {
     width: 100vw;
     height: 100vh;
