@@ -2,19 +2,6 @@
 
 $errorMSG = "";
 
-// If the first name is empty or invalid
-if (empty($_POST["fullname"])) {
-    $errorMSG .= "Full Name is required";
-} else {
-    $testingfullname = test_input($_POST["fullname"]);
-    if (!preg_match("/^[a-zA-Z ]*$/",$testingfullname)) {
-        $errorMSG = "Full Name must only include letters and spaces";
-        $fullname = "";
-    } else {
-        $fullname = $_POST["fullname"];
-    }
-}
-
 // If the email is empty or invalid
 if (empty($_POST["nlemail"])) {
     $errorMSG = "Email is required";
@@ -41,9 +28,6 @@ $Subject = "New Newsletter Subscription!";
 
 // prepare email body text
 $Body = "";
-$Body .= "Full Name: ";
-$Body .= $fullname;
-$Body .= "\n";
 $Body .= "Email: ";
 $Body .= $nlemail;
 $Body .= "\n";

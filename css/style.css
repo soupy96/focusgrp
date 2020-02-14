@@ -1206,6 +1206,44 @@ ul {
     width: 100%;
     height: 50%;
     float: left;
+    text-align: center;
+}
+
+.subscribebox h2 {
+    font-weight: 300;
+    margin-bottom: 10%;
+}
+
+#nlemail {
+    background-color: #ffffff;
+}
+
+#nlemail::placeholder {
+    color: #2A5769;
+}
+
+#newsletter-submit {
+    background-color: #fA9600;
+    color: #ffffff;
+    border: 0px;
+    float: left;
+    width: 100%;
+    padding: 15px 30px 15px 30px;
+    font-size: 1.25em;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+}
+
+#newsletterSubmit {
+    color: #fA9600;
+    width: 100%;
+    height: 100%;
+    margin-top: 15%;
+}
+
+.nl-danger {
+    margin-top: 15% !important;
 }
 /* End of the main content on the side pages */
 /* Media Queries */
