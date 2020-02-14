@@ -1173,7 +1173,7 @@ ul {
     height: 28%;
     float: left;
     border-bottom: 1px solid #2A5769;
-    padding-bottom: 2%;
+    padding-bottom: 5%;
     margin-bottom: 1%;
 }
 
@@ -1208,6 +1208,7 @@ ul {
     height: 50%;
     float: left;
     text-align: center;
+    margin-top: 5%;
 }
 
 .subscribebox h2 {
