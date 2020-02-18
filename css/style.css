@@ -1096,7 +1096,7 @@ textarea {
 }
 
 .fullwidthimgtextfeb {
-    width: 50%;
+    width: 50vw;
     margin-left: 10%;
     margin-right: 40%;
     margin-top: 32vh;
@@ -1359,6 +1359,10 @@ ul {
     #msgSubmit {
         width: 30%;
     }
+
+    .fullwidthimgtextfeb {
+        width: 60vw;
+    }
 }
 
 @media only screen and (max-width: 1400px) {
@@ -1397,6 +1401,10 @@ ul {
     .footerlogo img {
         width: 40%;
     }
+
+    .fullwidthimgtextfeb {
+        margin-top: 27vh;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -1426,6 +1434,10 @@ ul {
 
     .leftinsights {
         margin-left: -5vw;
+    }
+
+    .fullwidthimgtextfeb {
+        width: 70vw;
     }
 }
 
@@ -1853,6 +1865,52 @@ ul {
         width: 15%;
     }
     /* End of changing the layout of the footer section */
+
+    .fullwidthimgtextfeb {
+        width: 80vw;
+        margin-top: 34vh;
+    }
+
+    .fullwidthimgtextfeb h1 {
+        font-size: 4em;
+    }
+
+    .insightcopy {
+        width: 100%;
+    }
+
+    .stickybar {
+        width: 100%;
+        height: 100%;
+        float: left;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+
+    .shareinsight {
+        width: 45%;
+        height: 100%;
+        padding: 0;
+        margin: 0;
+        margin-right: 5%;
+        border: none;
+    }
+
+    .shareinsight .headersocials {
+        width: 100%;
+    }
+
+    .shareinsightbox a {
+        padding-left: 4.5vw !important;
+    }
+
+    .subscribebox {
+        width: 45%;
+        height: 100%;
+        margin: 0;
+        margin-left: 5%;
+        text-align: left;
+    }
 }
 
 @media only screen and (max-width: 900px) {
@@ -1895,6 +1953,12 @@ ul {
 /* Changing the layout to fit for just mobile/smaller screens */
 /* Changing the Desktop insight slider to a mobile slider */
 @media only screen and (max-width: 800px) {
+    .topbar {
+        width: 90%;
+        padding-right: 5%;
+        padding-left: 5%;
+    }
+    
     .logo {
         width: 100%;
         float: left;
@@ -1978,6 +2042,59 @@ ul {
     .footerlogo img {
         width: 20%;
     }
+
+    .fullwidthimgtextfeb {
+        width: 90vw;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    .mainbox {
+        width: 90vw;
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .shareinsight {
+        width: 100%;
+        margin: 0%;
+        margin-bottom: 2%;
+    }
+
+    .sharetext {
+        width: 25%;
+        height: 100%;
+        float: left;
+    }
+
+    .sharetext h2 {
+        margin: 10px;
+    }
+
+    .shareinsightbox a {
+        padding-left: 10vw !important;
+    }
+
+    .shareinsightbox .headersocials {
+        width: 75%;
+        height: 100%;
+        float: left;
+        margin-top: 0;
+    }
+
+    .subscribebox {
+        width: 100%;
+        margin: 0%;
+        margin-top: 5%;
+    }
+
+    .subscribebox h2 {
+        margin-bottom: 5%;
+    }
+
+    #newsletterSubmit {
+        margin-top: 7%;
+    }
 }
 
 /* Contact form feilds go full width */
@@ -2021,6 +2138,14 @@ ul {
 
     #msgSubmit {
         width: 39%;
+    }
+
+    .shareinsightbox a {
+        padding-left: 9vw !important;
+    }
+
+    .fullwidthimgtextfeb h1 {
+        font-size: 3.5em;
     }
 }
 
@@ -2145,6 +2270,14 @@ ul {
     .footerhotline a {
         width: 25%;
     }
+
+    .shareinsightbox a {
+        padding-left: 7.75vw !important;
+    }
+
+    .fullwidthimgtextfeb h1 {
+        font-size: 3em;
+    }
 }
 
 @media only screen and (max-width: 540px) {
@@ -2154,6 +2287,10 @@ ul {
 
     #msgSubmit {
         width: 51%;
+    }
+
+    .fullwidthimgtextfeb h1 {
+        font-size: 3em;
     }
 }
 
@@ -2193,11 +2330,28 @@ ul {
         width: 55%;
         margin-bottom: 5%;
     }
+
+    .fullwidthimgtextfeb {
+        margin-top: 30vh;
+    }
+
+    .shareinsightbox a {
+        padding-left: 5vw !important;
+    }
+
+    .sharetext h2 {
+        margin: 10px;
+        font-size: 1.2em;
+    }
 }
 
 @media only screen and (max-width: 445px) {
     .text-danger {
         margin-top: 241% !important;
+    }
+
+    .shareinsightbox a {
+        padding-left: 5vw !important;
     }
 }
 
@@ -2253,6 +2407,18 @@ ul {
 
     .footerhotline a {
         width: 35%;
+    }
+
+    .shareinsightbox a {
+        padding-left: 5vw !important;
+    }
+
+    .sharetext img {
+        width: 10px;
+    }
+
+    .sharetext h2 {
+        font-size: 1em;
     }
 }
 
