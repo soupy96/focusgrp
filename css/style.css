@@ -1475,6 +1475,12 @@ ul {
         margin-left: 43%;
     }
 
+    .rightinsightsmobile {
+        width: 80%;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+
     .text-danger {
         margin-top: 78% !important;
     }
@@ -1687,6 +1693,12 @@ ul {
         margin-right: 22%;
     }
 
+    .landingbox {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
     /* Changing the layout for the services section */
 
     .services {
@@ -1803,7 +1815,6 @@ ul {
     }
 
     .rightinsightsmobile {
-        width: 100%;
         margin-top: 5%;
     }
     /* End of changing the layout of the insights section */
@@ -2018,9 +2029,10 @@ ul {
     
     .rightinsightsmobile {
         display: block;
-        width: 100%;
+        width: 80%;
         float: left;
         margin-top: 5%;
+        margin-left: 10%;
     }
 
     .rightinsightsmobile img{
