@@ -695,7 +695,6 @@ a {
     background-position: center;
 }
 
-/* This displays the number on the card in which we are hiding */
 .carousel-cell:before, .carousel-cell__number {
     display: none;
     width: 100px;
@@ -716,7 +715,6 @@ a {
     width: 44px;
     height: 44px;
     border-radius: 50%;
-    /* vertically center */
     transform: translateY(-50%);
 }
 
@@ -725,7 +723,6 @@ a {
     background: hsla(0, 0%, 100%, 0.75);
     border: none;
     color: #333;
-    /* Hiding the arrows to go to the next card */
     display: none;
 }
 
@@ -746,7 +743,6 @@ a {
 .flickity-button:disabled {
     opacity: 0.3;
     cursor: auto;
-    /* prevent disabled button from capturing pointer up event. #716 */
     pointer-events: none;
 }
 
@@ -754,19 +750,19 @@ button, [type="button"], [type="reset"], [type="submit"] {
   -webkit-appearance: button;
 }
 
-button, select { /* 1 */
+button, select { 
   text-transform: none;
 }
 
-button, input { /* 1 */
+button, input { 
   overflow: visible;
 }
 
 button, input, optgroup, select, textarea {
-  font-family: inherit; /* 1 */
-  font-size: 100%; /* 1 */
-  line-height: 1.15; /* 1 */
-  margin: 0; /* 2 */
+  font-family: inherit; 
+  font-size: 100%; 
+  line-height: 1.15; 
+  margin: 0; 
 }
 
 .flickity-prev-next-button.next { 
@@ -1473,12 +1469,6 @@ ul {
 
     .insightsscroll {
         margin-left: 43%;
-    }
-
-    .rightinsightsmobile {
-        width: 80%;
-        margin-left: 10%;
-        margin-right: 10%;
     }
 
     .text-danger {
@@ -2362,17 +2352,11 @@ ul {
 
 @media only screen and (max-width: 411px) {
     .leftlanding {
-        margin-left: -12.5vw;
+        margin-left: -15.5vw;
     }
 
     .leftinsights {
-        margin-left: -12.5vw;
-    }
-    
-    .rightinsightsmobile img {
-        width: 90%;
-        float: left;
-        margin: 5%;
+        margin-left: -15.5vw;
     }
 }
 
