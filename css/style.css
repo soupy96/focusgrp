@@ -1197,6 +1197,20 @@ ul {
     float: left;
     margin: 0px;
     margin-top: 4%;
+    width: 100%;
+}
+
+.shareinsightbox .headersocials a {
+    padding: 0;
+    height: 100%;
+    width: 25%;
+    float: left;
+    text-align: center;
+}
+
+.shareinsightbox .headersocials img {
+    padding: 0;
+    height: 1.5em;
 }
 
 .subscribebox {
@@ -1210,6 +1224,10 @@ ul {
 .subscribebox h2 {
     font-weight: 300;
     margin-bottom: 10%;
+}
+
+.subscribebox input {
+    color: #2A5769;
 }
 
 #nlemail {
@@ -1897,12 +1915,24 @@ ul {
         border: none;
     }
 
-    .shareinsight .headersocials {
+    .shareinsightbox .headersocials {
+        float: left;
+        margin: 0px;
+        margin-top: 4%;
         width: 100%;
     }
-
-    .shareinsightbox a {
-        padding-left: 4.5vw !important;
+    
+    .shareinsightbox .headersocials a {
+        padding: 0;
+        height: 100%;
+        width: 25%;
+        float: left;
+        text-align: center;
+    }
+    
+    .shareinsightbox .headersocials img {
+        padding: 0;
+        height: 1.5em;
     }
 
     .subscribebox {
@@ -2066,15 +2096,24 @@ ul {
         margin: 10px;
     }
 
-    .shareinsightbox a {
-        padding-left: 10vw !important;
-    }
-
     .shareinsightbox .headersocials {
         width: 75%;
         height: 100%;
         float: left;
-        margin-top: 0;
+        margin-top: 1.5%;
+    }
+    
+    .shareinsightbox .headersocials a {
+        padding: 0;
+        height: 100%;
+        width: 25%;
+        float: left;
+        text-align: center;
+    }
+    
+    .shareinsightbox .headersocials img {
+        padding: 0;
+        height: 1.5em;
     }
 
     .subscribebox {
@@ -2133,10 +2172,6 @@ ul {
 
     #msgSubmit {
         width: 39%;
-    }
-
-    .shareinsightbox a {
-        padding-left: 9vw !important;
     }
 
     .fullwidthimgtextfeb h1 {
@@ -2266,10 +2301,6 @@ ul {
         width: 25%;
     }
 
-    .shareinsightbox a {
-        padding-left: 7.75vw !important;
-    }
-
     .fullwidthimgtextfeb h1 {
         font-size: 3em;
     }
@@ -2330,10 +2361,6 @@ ul {
         margin-top: 30vh;
     }
 
-    .shareinsightbox a {
-        padding-left: 5vw !important;
-    }
-
     .sharetext h2 {
         margin: 10px;
         font-size: 1.2em;
@@ -2343,10 +2370,6 @@ ul {
 @media only screen and (max-width: 445px) {
     .text-danger {
         margin-top: 241% !important;
-    }
-
-    .shareinsightbox a {
-        padding-left: 5vw !important;
     }
 }
 
@@ -2396,10 +2419,6 @@ ul {
 
     .footerhotline a {
         width: 35%;
-    }
-
-    .shareinsightbox a {
-        padding-left: 5vw !important;
     }
 
     .sharetext img {
