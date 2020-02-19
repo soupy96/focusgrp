@@ -1973,6 +1973,7 @@ ul {
     .logo {
         width: 100%;
         float: left;
+        margin-right: 0;
     }
 
     .logo img {
@@ -2025,14 +2026,6 @@ ul {
 
     .rightinsights {
         display: none;
-    }
-    
-    .rightinsightsmobile {
-        display: block;
-        width: 80%;
-        float: left;
-        margin-top: 5%;
-        margin-left: 10%;
     }
 
     .rightinsightsmobile img{
