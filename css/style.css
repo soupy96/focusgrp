@@ -180,6 +180,16 @@ a {
 /* End of Back to top */
 
 /* Header Styles */
+.mobilenav {
+    display: none;
+}
+
+.landing {
+    width: 100%;
+    height: 100%;
+    float: left;
+}
+
 .topbar {
     width: 80%;
     float: left;
@@ -254,11 +264,19 @@ a {
 .topnav .icon {
     display: none;
 }
-
-.mobilenav {
-    display: none;
-}
 /* End of Navigation Styles */
+.headerhotline {
+    float: right;
+    margin-top: 3.5%;
+}
+
+.headerhotline a {
+    border: 2px solid #fA9600;
+    border-radius: 10px 10px 10px 10px;
+    -moz-border-radius: 10px 10px 10px 10px;
+    -webkit-border-radius: 10px 10px 10px 10px;
+    padding: 5px 5px 5px 10px;
+}
 
 .headersocials {
     float: right;
@@ -292,19 +310,6 @@ a {
 .hvr-float:hover, .hvr-float:focus, .hvr-float:active {
     -webkit-transform: translateY(-8px);
     transform: translateY(-8px);
-}
-
-.headerhotline {
-    float: right;
-    margin-top: 3.5%;
-}
-
-.headerhotline a {
-    border: 2px solid #fA9600;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    padding: 5px 5px 5px 10px;
 }
 
 /* Sweep To Right */
@@ -399,69 +404,7 @@ a {
 .orangeletter {
     color: #FA9600;
 }
-
-.porange {
-    border-bottom: 1px solid #FA9600;
-    margin-bottom: 5px;
-    width: 20%;
-}
-
-.sech1 {
-    margin-top: 2.5%;
-}
 /* End of the full width img */
-
-/* Who we are Styles */
-.whoweare {
-    width: 100%;
-    height: 100%;
-    float: left;
-    padding-bottom: 12%;
-    background-color: #ffffff;
-}
-
-.landing {
-    width: 100%;
-    height: 100%;
-    float: left;
-}
-
-.landingbox {
-    width: 80%;
-    float: left;
-    height: 100%;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 6%;
-}
-
-.leftlanding {
-    width: 80%;
-    float: left;
-    height: 100%;
-    margin-left: -3vw;
-}
-
-.redbox {
-    width: 125px;
-    height: 3px;
-    background-color: #fA9600;
-    margin-bottom: 5%;
-}
-
-.landingtext {
-    font-size: 1.25em;
-}
-
-.landingtext h1 {
-    font-size: 2.75em;
-}
-
-.landingtext .redbox {
-    margin-bottom: 2%;
-}
-
-/* End of Landing Styles */
 
 /* Start of the full width slider */
 .fullwidthslider {
@@ -507,6 +450,52 @@ a {
     height: 100%;
 }
 /* End of the full width slider */
+
+/* Who we are Styles */
+.whoweare {
+    width: 100%;
+    height: 100%;
+    float: left;
+    padding-bottom: 12%;
+    background-color: #ffffff;
+}
+
+.landingbox {
+    width: 80%;
+    float: left;
+    height: 100%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 6%;
+}
+
+.leftlanding {
+    width: 80%;
+    float: left;
+    height: 100%;
+    margin-left: -3vw;
+}
+
+.redbox {
+    width: 125px;
+    height: 3px;
+    background-color: #fA9600;
+    margin-bottom: 5%;
+}
+
+.landingtext {
+    font-size: 1.25em;
+}
+
+.landingtext h1 {
+    font-size: 2.75em;
+}
+
+.landingtext .redbox {
+    margin-bottom: 2%;
+}
+
+/* End of Landing Styles */
   
 /* Services Styles */
 .services {
@@ -571,10 +560,6 @@ a {
 
 .rightservices p {
     color: #ffffff;
-}
-
-.rightservices .redbox {
-    background-color: #ffffff;
 }
 
 .rightbody h2 {
@@ -1012,37 +997,6 @@ textarea {
     width: 100%;
 }
 
-.footersocials {
-    width: 50%;
-    float: left;
-}
-
-.footersocials a {
-    padding: 7px;
-}
-
-.footersocials img {
-    height: 20px;
-}
-
-.footerhotline {
-    width: 50%;
-    float: right;
-}
-
-.footerhotline a {
-    border: 2px solid #FA9600;
-    border-radius: 10px 10px 10px 10px;
-    -moz-border-radius: 10px 10px 10px 10px;
-    -webkit-border-radius: 10px 10px 10px 10px;
-    padding: 5px 10px 5px 10px;
-}
-
-.footerhotline img {
-    width: 20%;
-    margin-bottom: -5px;
-}
-
 .copyright {
     width: 100%;
     float: left;
@@ -1055,18 +1009,7 @@ textarea {
 /* End of Footer Styles */
 
 /* Start of the main content on the side pages */
-.fullwidthimgjan {
-    width: 100vw;
-    height: 100vh;
-    float: left;
-    background-image: url(../insights/jan-big-pic.jpg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    background-color: #ffffff;
-}
-
+/* Start of Socks page */
 .fullwidthimgfeb2 {
     width: 100vw;
     height: 100vh;
@@ -1078,7 +1021,9 @@ textarea {
     background-size: cover;
     background-color: #ffffff;
 }
+/* End of Socks page */
 
+/* Start of Comms page */
 .fullwidthimgfeb {
     width: 100vw;
     height: 100vh;
@@ -1090,6 +1035,21 @@ textarea {
     background-size: cover;
     background-color: #ffffff;
 }
+/* End of Comms page */
+
+/* Start of New page */
+.fullwidthimgjan {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background-image: url(../insights/jan-big-pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffffff;
+}
+/* End of New page */
 
 .fullwidthimgtextfeb {
     width: 50vw;
@@ -1122,7 +1082,9 @@ textarea {
     margin: 0px;
     margin-left: 1.5%;
 }
+/*  */
 
+/* Start of the main copy on the side pages */
 .mainbox {
     width: 80%;
     padding-left: 10%;
@@ -1153,7 +1115,9 @@ ul {
 .insightcopy span {
     color: #FA9600;
 }
+/* End of the main copy on the side pages */
 
+/* Start of the sticky bar on the side pages */
 .stickybar {
     width: 200px;
     height: 450px;
@@ -1261,6 +1225,7 @@ ul {
 .nl-danger {
     padding-top: 35% !important;
 }
+/* End of the sticky bar on the side pages */
 /* End of the main content on the side pages */
 /* Media Queries */
 @media only screen and (max-width: 1800px) {
