@@ -77,6 +77,8 @@ function test_input($data) {
     return $data;
 }
 $EmailTo = "michael@blackridgestrategy.com"; //This is for testing
+//$EmailTo = "dv27nfhr5nsl@a2plcpnl0377.prod.iad2.secureserver.net"; // This is for testing
+//$EmailTo = "michael@focusgrp.ca"; // This is for testing
 //$EmailTo = "mike@focusgrp.ca"; //This is for testing
 //$EmailTo = "amir@focusgrp.ca"; // This is for live
 $Subject = "New Form Submission Recieved";

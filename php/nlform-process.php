@@ -24,6 +24,8 @@ function test_input($data) {
 
 $EmailTo = "michael@blackridgestrategy.com"; //This is for testing
 //$EmailTo = "mike@focusgrp.ca"; //This is for testing
+//$EmailTo = "dv27nfhr5nsl@a2plcpnl0377.prod.iad2.secureserver.net"; // This is for testing
+//$EmailTo = "michael@focusgrp.ca"; // This is for testing
 //$EmailTo = "laura@focusgrp.ca"; // This is for live
 $Subject = "New Newsletter Subscription!";
 
