@@ -408,11 +408,11 @@ a {
 
 /* Start of the full width slider */
 .fullwidthslider {
-    width: 100%;
-    height: 100%;
+    width: 100vw;
+    height: 100vh;
     float: left;
-    z-index: -999;
-    position: absolute;
+    /* z-index: -999;
+    position: absolute; */
 }
 
 .slick-next {
@@ -424,13 +424,13 @@ a {
 }
 
 .left-slider {
-    width: 50%;
+    width: 50vw;
     height: 100%;
     float: left;
 }
 
 .right-slider {
-    width: 50%;
+    width: 50vw;
     height: 100%;
     float: right;
     background-color: red;
@@ -448,6 +448,11 @@ a {
 .slick-slide img {
     width: 100%;
     height: 100%;
+}
+
+.contain {
+    margin-top: 35vh;
+    margin-left: 15vw;
 }
 /* End of the full width slider */
 

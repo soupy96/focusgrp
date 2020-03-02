@@ -21,38 +21,127 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600); 
         return false; 
     });
-    // This code starts the slick slider with the setting underneath it like autoplay and the time that it spends on one card
-    // $(".lazy").slick({
-    //   lazyLoad: 'ondemand', // ondemand progressive anticipated
-    //   infinite: true,
-    //   autoplay: true,
-    //   autoplaySpeed: 1500
-    // });
+    //This code starts the slick slider with the setting underneath it like autoplay and the time that it spends on one card
+    $(".lazy").slick({
+      lazyLoad: 'ondemand', // ondemand progressive anticipated
+      infinite: true,
+      autoplay: true,
+      autoplaySpeed: 1500
+    });
 });
 
+// BEGINNING OF THE TEXT CHANGE
 // This dynamically gets the id of the slide and outputs it into the right side of the carousel section
-// var mutationObserver = new MutationObserver(function(mutations) {
-//   mutations.forEach(function (mutation) {
-//     let slidewhole = document.getElementsByClassName("slick-track");
+var mutationObserver = new MutationObserver(function(mutations) {
+  mutations.forEach(function (mutation) {
+    let slidewhole = document.getElementsByClassName("slick-track");
 
-//     let slidelist = slidewhole[0].children;
+    let slidelist = slidewhole[0].children;
 
-//     for (let x = 1; x < slidelist.length; x++) {
-//       let slideid = slidelist[x].id;
-//       if (slideid) {
-//         let slideatt = document.getElementById(slideid).attributes;
-//         for (let y = 0; y < slideatt.length; y++) {
-//           if (slideatt[y].name === "aria-hidden") {
-//             if (slideatt[y].value === "false") {
-//               // typeWriter(slideid);
-//               document.getElementById("mainslidername").innerHTML = slideid;
-//             }
-//           }
-//         }
-//       }
-//     }
-//   });
-// });
+    for (let x = 1; x < slidelist.length; x++) {
+      let slideid = slidelist[x].id;
+      if (slideid) {
+        let slideatt = document.getElementById(slideid).attributes;
+        for (let y = 0; y < slideatt.length; y++) {
+          if (slideatt[y].name === "aria-hidden") {
+            if (slideatt[y].value === "false") {
+              // document.getElementById("mainslidername").innerHTML = slideid;
+              typeWriter(slideid);
+
+              function typeWriter(slideId) {
+                var s = 0;
+
+                var test = slideId;
+
+                var res1 = "results driven";
+                var res2 = "creative thinkers";
+                var res3 = "data centric";
+                var res4 = "focused on sustainability";
+
+                var speed = 50; /* The speed/duration of the effect in milliseconds */
+
+                if (test === res1) {
+                  testing1();
+                  function testing1() {
+                    for (let s = 0; s < res1.length; s++) {
+                      // if (s < res1.length) {
+                      // let micahel = document.getElementById("mainslidername").innerHTML;
+                      // if (document.getElementById("mainslidername").innerHTML = "") {
+                      document.getElementById("mainslidername").innerHTML += res1.charAt(s);
+                      setTimeout(testing1, speed);
+                    }
+                  }
+                }
+
+                if (test === res2) {
+                  if (s < res2.length) {
+                    document.getElementById("mainslidername").innerHTML = "";
+                    if (document.getElementById("mainslidername").innerHTML = "") {
+                      document.getElementById("mainslidername").innerHTML += res2.charAt(s);
+                      s++;
+                      setTimeout(typeWriter, speed);
+                    }
+                  }
+                }
+
+                if (test === res3) {
+                  if (s < res3.length) {
+                    document.getElementById("mainslidername").innerHTML = "";
+                    if (document.getElementById("mainslidername").innerHTML = "") {
+                      document.getElementById("mainslidername").innerHTML += res3.charAt(s);
+                      s++;
+                      setTimeout(typeWriter, speed);
+                    }
+                  }
+                }
+
+                if (test === res4) {
+                  if (s < res4.length) {
+                    document.getElementById("mainslidername").innerHTML = "";
+                    if (document.getElementById("mainslidername").innerHTML = "") {
+                      document.getElementById("mainslidername").innerHTML += res4.charAt(s);
+                      s++;
+                      setTimeout(typeWriter, speed);
+                    }
+                  }
+                }
+              }
+// }
+            }
+          }
+        }
+      }
+    }
+  });
+});
+
+// This gets the element with the id #allslides to use with the mutatuionObserver
+let elementToObserve = document.getElementById("allslides");
+
+//These are the type of things we are telling the mutation observer to watch a change for
+let config = {
+  attributes: true,
+  characterData: true,
+  childList: true,
+  subtree: true,
+  attributeOldValue: true,
+  characterDataOldValue: true
+}
+
+//This calls the function with the element and the settings that we previously made. It calls this whenever something in the #allslides changes
+mutationObserver.observe(elementToObserve, config);
+// END OF THE TEXT CHANGE
+
+// BEGINNING OF THE TYPEWRITER EFFECT
+// This is for the typewriter effect
+// var myVar;
+
+// function myFunction() {
+//   myVar = setTimeout(typeWriter, 3000);
+// }
+
+// function alertFunc() {
+  
 
 // var i = 0;
 // var speed = 50;
@@ -62,27 +151,12 @@ $(document).ready(function(){
 //   var SI = arguments[0];
 
 //   if (i < SI.length) {
-//     document.getElementById("mainslidername").innerHTML += .charAt(i);
+//     document.getElementById("mainslidername").innerHTML += charAt(i);
 //     i++;
 //     setTimeout(typeWriter, speed);
 //   }
 // }
-
-// This gets the element with the id #allslides to use with the mutatuionObserver
-// let elementToObserve = document.getElementById("allslides");
-
-// // These are the things we are telling the mutation observer to watch a change for
-// let config = {
-//   attributes: true,
-//   characterData: true,
-//   childList: true,
-//   subtree: true,
-//   attributeOldValue: true,
-//   characterDataOldValue: true
-// }
-
-// // This calls the function with the element and the settings that we previously made. It calls this whenever something in the #allslides changes
-// mutationObserver.observe(elementToObserve, config);
+// END OF THE TYPEWRTIER EFFECT
 
 // This is for the scrolling animations
 // Detect request animation frame
@@ -142,57 +216,3 @@ function onHoverF() {
 function offHoverF() {
     $("#menuImgF").attr('src', 'icons/email-hotline.png');
 }
-
-// var myVar;
-
-// function myFunction() {
-//   myVar = setTimeout(typeWriter, 3000);
-// }
-
-// // function alertFunc() {
-  
-
-//   function typeWriter() {
-//     var s = 0;
-
-//     var test = document.getElementById("typetext").innerHTML;
-
-//     var res1 = "Results1";
-//     var res2 = "Results2";
-//     var res3 = "Results3";
-
-//     var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-//     if (test === res1) {
-//       if (s < res2.length) {
-//         if (document.getElementById("typetext").innerHTML = "") {
-//           document.getElementById("typetext").innerHTML += res2.charAt(s);
-//           s++;
-//           setTimeout(typeWriter, speed);
-//         }
-//       }
-//     }
-
-//     if (test === res2) {
-//       if (s < res3.length) {
-//         document.getElementById("typetext").innerHTML = "";
-//         if (document.getElementById("typetext").innerHTML = "") {
-//           document.getElementById("typetext").innerHTML += res3.charAt(s);
-//           s++;
-//           setTimeout(typeWriter, speed);
-//         }
-//       }
-//     }
-
-//     if (test === res3) {
-//       if (s < res1.length) {
-//         document.getElementById("typetext").innerHTML = "";
-//         if (document.getElementById("typetext").innerHTML = "") {
-//           document.getElementById("typetext").innerHTML += res1.charAt(s);
-//           s++;
-//           setTimeout(typeWriter, speed);
-//         }
-//       }
-//     }
-//   // }
-// }
