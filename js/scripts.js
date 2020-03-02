@@ -45,68 +45,28 @@ var mutationObserver = new MutationObserver(function(mutations) {
         for (let y = 0; y < slideatt.length; y++) {
           if (slideatt[y].name === "aria-hidden") {
             if (slideatt[y].value === "false") {
-              // document.getElementById("mainslidername").innerHTML = slideid;
-              typeWriter(slideid);
+              var s = 0;
 
-              function typeWriter(slideId) {
-                var s = 0;
+              var res1 = "results driven";
+              var res2 = "creative thinkers";
+              var res3 = "data centric";
+              var res4 = "focused on sustainability";
 
-                var test = slideId;
+              var speed = 1000; /* The speed/duration of the effect in milliseconds */
 
-                var res1 = "results driven";
-                var res2 = "creative thinkers";
-                var res3 = "data centric";
-                var res4 = "focused on sustainability";
-
-                var speed = 50; /* The speed/duration of the effect in milliseconds */
-
-                if (test === res1) {
-                  testing1();
-                  function testing1() {
-                    for (let s = 0; s < res1.length; s++) {
-                      // if (s < res1.length) {
-                      // let micahel = document.getElementById("mainslidername").innerHTML;
-                      // if (document.getElementById("mainslidername").innerHTML = "") {
-                      document.getElementById("mainslidername").innerHTML += res1.charAt(s);
-                      setTimeout(testing1, speed);
-                    }
-                  }
-                }
-
-                if (test === res2) {
-                  if (s < res2.length) {
-                    document.getElementById("mainslidername").innerHTML = "";
-                    if (document.getElementById("mainslidername").innerHTML = "") {
-                      document.getElementById("mainslidername").innerHTML += res2.charAt(s);
-                      s++;
-                      setTimeout(typeWriter, speed);
-                    }
-                  }
-                }
-
-                if (test === res3) {
-                  if (s < res3.length) {
-                    document.getElementById("mainslidername").innerHTML = "";
-                    if (document.getElementById("mainslidername").innerHTML = "") {
-                      document.getElementById("mainslidername").innerHTML += res3.charAt(s);
-                      s++;
-                      setTimeout(typeWriter, speed);
-                    }
-                  }
-                }
-
-                if (test === res4) {
-                  if (s < res4.length) {
-                    document.getElementById("mainslidername").innerHTML = "";
-                    if (document.getElementById("mainslidername").innerHTML = "") {
-                      document.getElementById("mainslidername").innerHTML += res4.charAt(s);
-                      s++;
-                      setTimeout(typeWriter, speed);
-                    }
-                  }
+              if (slideid === res1) {
+                testing1();
+                function testing1() {
+                  // for (let s = 0; s < res1.length; s++) {
+                    let michael = res1.length;
+                    let molly = 0;
+                    if (molly < michael)
+                    document.getElementById("mainslidername").innerHTML += res1.charAt(s);
+                    molly++
+                    setTimeout(testing1, speed);
+                  // }
                 }
               }
-// }
             }
           }
         }
