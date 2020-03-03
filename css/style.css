@@ -1955,6 +1955,10 @@ ul {
         background-image: url(../insights/mobile-cards/feb2-insight-900px.jpg);
     }
 
+    .mar-insight-card {
+        background-image: url(../insights/mobile-cards/mar-insight-900px.jpg);
+    }
+
     .text-danger {
         margin-top: 73% !important;
         width: 50% !important;
@@ -2243,6 +2247,10 @@ ul {
         background-image: url(../insights/mobile-cards/feb2-insight-600px.jpg);
     }
 
+    .mar-insight-card {
+        background-image: url(../insights/mobile-cards/mar-insight-600px.jpg);
+    }
+
     .rightbody {
         width: 100%;
         float: left;
@@ -2330,6 +2338,10 @@ ul {
     .feb2-insight-card {
         background-image: url(../insights/mobile-cards/feb2-insight-500px.jpg);
     }
+
+    .mar-insight-card {
+        background-image: url(../insights/mobile-cards/mar-insight-500px.jpg);
+    }
     
     .rightinsightsmobile img {
         width: 90%;
@@ -2389,6 +2401,9 @@ ul {
     .feb2-insight-card {
         background-image: url(../insights/mobile-cards/feb2-insight-400px.jpg);
     }
+
+    .mar-insight-card {
+        background-image: url(../insights/mobile-cards/mar-insight-400px.jpg);    }
 
     .text-danger {
         margin-top: 257% !important;
