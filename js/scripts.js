@@ -55,12 +55,15 @@ var mutationObserver = new MutationObserver(function(mutations) {
               var speed = 1000; /* The speed/duration of the effect in milliseconds */
 
               if (slideid === res1) {
+                let michael = res1.length;
+                let molly = 0;
                 testing1();
                 function testing1() {
-                  // for (let s = 0; s < res1.length; s++) {
-                    let michael = res1.length;
-                    let molly = 0;
-                    if (molly < michael)
+                    if (molly < michael) {
+
+                    } else {
+                      
+                    }
                     document.getElementById("mainslidername").innerHTML += res1.charAt(s);
                     molly++
                     setTimeout(testing1, speed);
