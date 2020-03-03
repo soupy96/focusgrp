@@ -21,78 +21,78 @@ $(document).ready(function(){
         $("html, body").animate({ scrollTop: 0 }, 600); 
         return false; 
     });
-    //This code starts the slick slider with the setting underneath it like autoplay and the time that it spends on one card
-    $(".lazy").slick({
-      lazyLoad: 'ondemand', // ondemand progressive anticipated
-      infinite: true,
-      autoplay: true,
-      autoplaySpeed: 1500
-    });
+    // //This code starts the slick slider with the setting underneath it like autoplay and the time that it spends on one card
+    // $(".lazy").slick({
+    //   lazyLoad: 'ondemand', // ondemand progressive anticipated
+    //   infinite: true,
+    //   autoplay: true,
+    //   autoplaySpeed: 1500
+    // });
 });
 
-// BEGINNING OF THE TEXT CHANGE
-// This dynamically gets the id of the slide and outputs it into the right side of the carousel section
-var mutationObserver = new MutationObserver(function(mutations) {
-  mutations.forEach(function (mutation) {
-    let slidewhole = document.getElementsByClassName("slick-track");
+// // BEGINNING OF THE TEXT CHANGE
+// // This dynamically gets the id of the slide and outputs it into the right side of the carousel section
+// var mutationObserver = new MutationObserver(function(mutations) {
+//   mutations.forEach(function (mutation) {
+//     let slidewhole = document.getElementsByClassName("slick-track");
 
-    let slidelist = slidewhole[0].children;
+//     let slidelist = slidewhole[0].children;
 
-    for (let x = 1; x < slidelist.length; x++) {
-      let slideid = slidelist[x].id;
-      if (slideid) {
-        let slideatt = document.getElementById(slideid).attributes;
-        for (let y = 0; y < slideatt.length; y++) {
-          if (slideatt[y].name === "aria-hidden") {
-            if (slideatt[y].value === "false") {
-              var s = 0;
+//     for (let x = 1; x < slidelist.length; x++) {
+//       let slideid = slidelist[x].id;
+//       if (slideid) {
+//         let slideatt = document.getElementById(slideid).attributes;
+//         for (let y = 0; y < slideatt.length; y++) {
+//           if (slideatt[y].name === "aria-hidden") {
+//             if (slideatt[y].value === "false") {
+//               var s = 0;
 
-              var res1 = "results driven";
-              var res2 = "creative thinkers";
-              var res3 = "data centric";
-              var res4 = "focused on sustainability";
+//               var res1 = "results driven";
+//               var res2 = "creative thinkers";
+//               var res3 = "data centric";
+//               var res4 = "focused on sustainability";
 
-              var speed = 1000; /* The speed/duration of the effect in milliseconds */
+//               var speed = 1000; /* The speed/duration of the effect in milliseconds */
 
-              if (slideid === res1) {
-                let michael = res1.length;
-                let molly = 0;
-                testing1();
-                function testing1() {
-                    if (molly < michael) {
+//               if (slideid === res1) {
+//                 let michael = res1.length;
+//                 let molly = 0;
+//                 testing1();
+//                 function testing1() {
+//                     if (molly < michael) {
 
-                    } else {
+//                     } else {
                       
-                    }
-                    document.getElementById("mainslidername").innerHTML += res1.charAt(s);
-                    molly++
-                    setTimeout(testing1, speed);
-                  // }
-                }
-              }
-            }
-          }
-        }
-      }
-    }
-  });
-});
+//                     }
+//                     document.getElementById("mainslidername").innerHTML += res1.charAt(s);
+//                     molly++
+//                     setTimeout(testing1, speed);
+//                   // }
+//                 }
+//               }
+//             }
+//           }
+//         }
+//       }
+//     }
+//   });
+// });
 
-// This gets the element with the id #allslides to use with the mutatuionObserver
-let elementToObserve = document.getElementById("allslides");
+// // This gets the element with the id #allslides to use with the mutatuionObserver
+// let elementToObserve = document.getElementById("allslides");
 
-//These are the type of things we are telling the mutation observer to watch a change for
-let config = {
-  attributes: true,
-  characterData: true,
-  childList: true,
-  subtree: true,
-  attributeOldValue: true,
-  characterDataOldValue: true
-}
+// //These are the type of things we are telling the mutation observer to watch a change for
+// let config = {
+//   attributes: true,
+//   characterData: true,
+//   childList: true,
+//   subtree: true,
+//   attributeOldValue: true,
+//   characterDataOldValue: true
+// }
 
-//This calls the function with the element and the settings that we previously made. It calls this whenever something in the #allslides changes
-mutationObserver.observe(elementToObserve, config);
+// //This calls the function with the element and the settings that we previously made. It calls this whenever something in the #allslides changes
+// mutationObserver.observe(elementToObserve, config);
 // END OF THE TEXT CHANGE
 
 // BEGINNING OF THE TYPEWRITER EFFECT

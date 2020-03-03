@@ -670,6 +670,11 @@ a {
     counter-increment: carousel-cell;
 }
 
+.mar-insight-card {
+    background-image: url(../insights/mobile-cards/mar-insight-full.jpg);
+    background-position: center;
+}
+
 .feb2-insight-card {
     background-image: url(../insights/mobile-cards/feb2-insight-full.jpg);
     background-position: center;
@@ -1014,6 +1019,25 @@ textarea {
 /* End of Footer Styles */
 
 /* Start of the main content on the side pages */
+/* Start of Values page */
+.fullwidthimgmar {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background-image: url(../insights/mar-big-pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffffff;
+}
+
+.pagelink {
+    color: #FA9600;
+    text-decoration: underline;
+}
+/* End of Values page */
+
 /* Start of Socks page */
 .fullwidthimgfeb2 {
     width: 100vw;
