@@ -45,31 +45,7 @@ $(document).ready(function(){
 //         for (let y = 0; y < slideatt.length; y++) {
 //           if (slideatt[y].name === "aria-hidden") {
 //             if (slideatt[y].value === "false") {
-//               var s = 0;
-
-//               var res1 = "results driven";
-//               var res2 = "creative thinkers";
-//               var res3 = "data centric";
-//               var res4 = "focused on sustainability";
-
-//               var speed = 1000; /* The speed/duration of the effect in milliseconds */
-
-//               if (slideid === res1) {
-//                 let michael = res1.length;
-//                 let molly = 0;
-//                 testing1();
-//                 function testing1() {
-//                     if (molly < michael) {
-
-//                     } else {
-                      
-//                     }
-//                     document.getElementById("mainslidername").innerHTML += res1.charAt(s);
-//                     molly++
-//                     setTimeout(testing1, speed);
-//                   // }
-//                 }
-//               }
+//               document.getElementById("mainslidername").innerHTML = slideid; 
 //             }
 //           }
 //         }
