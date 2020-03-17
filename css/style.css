@@ -1024,6 +1024,20 @@ textarea {
 /* End of Footer Styles */
 
 /* Start of the main content on the side pages */
+/* Start of Socks page */
+.fullwidthimgmar2 {
+    width: 100vw;
+    height: 100vh;
+    float: left;
+    background-image: url(../insights/mar2-big-pic.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: #ffffff;
+}
+/* End of Socks page */
+
 /* Start of Values page */
 .fullwidthimgmar {
     width: 100vw;
